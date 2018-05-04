@@ -1,0 +1,11 @@
+<h1>Table of Contents</h1>
+<div *ngFor="let change of changes">
+    <app-header (onClick)="update($event)" [change]="change"></app-header>
+</div>
+<br />
+<hr />
+<br />
+<h1>Changes</h1>
+<div *ngFor="let change of changes">
+    <app-change [change]="change"></app-change>
+</div>

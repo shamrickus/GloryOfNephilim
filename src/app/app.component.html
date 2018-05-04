@@ -1,0 +1,26 @@
+<div fxLayout="column">
+    <div fxLayout="row" class="headerRow">
+        <div fxLayout="column" id="logoContainer">
+            <img id="logo" src="../assets/images/logo.gif" />
+            <div>Glory of Nephilim</div>
+        </div>
+        <div fxFlex></div>
+        <div fxLayout="column">
+            <span class="lastUpdated">Last Updated: 03/5/2018</span>
+            <div fxLayout="row">
+                <mat-slide-toggle (change)="fancyText = !fancyText"></mat-slide-toggle>
+                <gon-button [pop]="true" [button]="downloadButton"></gon-button>
+            </div>
+        </div>
+    </div>
+    <div fxLayout="row">
+       <gon-sidebar [buttons]="buttons"></gon-sidebar>
+        <gon-card class="{{fontType()}}" [type]="0">
+            <main>
+                <router-outlet #route="outlet"></router-outlet>
+            </main>
+        </gon-card>
+    </div>
+    <gon-footer></gon-footer>
+    <app-to-top></app-to-top>
+</div>

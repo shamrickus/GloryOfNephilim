@@ -1,0 +1,43 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+$fontsPath: "/assets/font";
+$imagesPath: "/assets/images";
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+.mat-icon {
+  vertical-align: middle;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: diablo, serif;
+}
+body {
+  background: url(#{$imagesPath}/bg.jpg);
+}
+
+@font-face {
+  font-family: diablo;
+  src: url(#{$fontsPath}/diablo.ttf);
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+}
+
+h1 {
+  text-align: center;
+}
