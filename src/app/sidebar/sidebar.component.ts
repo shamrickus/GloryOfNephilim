@@ -18,7 +18,7 @@ export class SidebarComponent implements OnInit {
 		for(let button of this.buttons) {
 		  button.active = false;
         }
-		let button = this.buttons.find(tab => "/" +tab.path === this.routes.url.split("/")[0]);
+		let button = this.buttons.find(tab => tab.path === this.routes.url.split("/")[1]);
 		if(button != null)
 			button.active = true;
     });  }
