@@ -8,6 +8,29 @@ export interface IPatches {
 
 export const PATCHES = [
     <IPatches>{
+        date: "05/20/2018",
+        changes: [
+            "Some stats of set items were diversified",
+			"Magic, rare, and socketed items can not be disenchanted anymore",
+            "Output jewels - Timeless and warped items 3, set items 2, unique items 1",
+            "Disenchanting of unique, set, timeless, and warped items - Any Perfect Gem x1 + item + White Potion",
+			"Looped Time Fragment - Warped Rune x3 + Golden Potion",
+			"Add skill on Timeless item (+3 lvl req) - Timeless item + Perfect Gem (class dependant) + Jewel x3 + nonstacked Key x? (skill dependant) + Looped Time Fragment",
+			"Make Item Timeless - Superior nonsocketed gloves or boots + Looped Time Fragment + Jewel",
+			"Make item warped - item + Any Perfect Game x3 + Jewel x3 + Golden Potion"
+        ],
+        collapsed:true
+    },
+    <IPatches>{
+        date: "05/18/2018",
+        changes: [
+            "Increased level of all monster on hell",
+			"Fixed a bug with Dark Diablo's Conviction skill",
+			"Added cows around Dark Diablo"
+        ],
+        collapsed:true
+    },
+    <IPatches>{
         date: "May 3rd, 2018",
         changes: [
             "Dark Diablo now drops only one special charm instead of 8",
@@ -19,7 +42,7 @@ export const PATCHES = [
             "Necro revives deal 2x damage but have .5x hp",
             "Amazon magic arrow, multiple shot, strafe buffed",
         ],
-        collapsed:false
+        collapsed:true
     },
     <IPatches>{
         date: "April 9th, 2018",
@@ -30,7 +53,7 @@ export const PATCHES = [
             "All high level items can be found even act 1 of hell",
 			"Added and changed some unique items"
         ],
-        collapsed:false
+        collapsed:true
     },
 	<IPatches>{
 		date: "March 18th, 2018",
@@ -198,6 +221,9 @@ export class PatchesComponent implements OnInit {
 	patches: IPatches[];
 
 	constructor() {
+		for(let i = 0; i < PATCHES.length && i < 2; ++i) {
+			PATCHES[i].collapsed = false;
+		}
 	}
 
 	ngOnInit() {

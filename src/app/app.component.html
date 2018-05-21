@@ -6,7 +6,7 @@
         </div>
         <div fxFlex></div>
         <div fxLayout="column">
-            <span class="lastUpdated">Last Updated: 03/5/2018</span>
+            <span class="lastUpdated">Last Updated: {{GetLastUpdate()}}</span>
             <div fxLayout="row">
                 <mat-slide-toggle (change)="fancyText = !fancyText"></mat-slide-toggle>
                 <gon-button [pop]="true" [button]="downloadButton"></gon-button>
