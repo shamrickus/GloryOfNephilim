@@ -8,6 +8,11 @@ export interface IPatches {
 
 export const PATCHES = [
     <IPatches>{
+		date: '05/30/2018',
+		changes: [ "Difficulty Balance Tweaks"],
+		collapsed: true
+	},
+    <IPatches>{
         date: "05/20/2018",
         changes: [
             "Some stats of set items were diversified",
