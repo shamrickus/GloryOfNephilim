@@ -12,6 +12,7 @@ export class AppComponent implements OnInit{
 	public buttons: Button[] = [
 		{text: "Home", path: "home", active: true},
 		{text: "Changes", path: "changelog", active: false},
+		{text: "Armory", path: "armory", active: false},
 		{text: "Patches", path: "patches", active: false},
 		{text: "FAQ", path: "faq", active: false},
 		{text: "ModDB", path: "http://www.moddb.com/mods/glory-of-nephilim", active: false},

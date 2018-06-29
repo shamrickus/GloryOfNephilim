@@ -18,6 +18,7 @@ import { PatchesComponent } from './pages/patches/patches.component';
 import { FaqComponent } from './pages/faq/faq.component';
 import { GonFooterComponent } from './gon-footer/gon-footer.component';
 import { ToTopComponent } from './to-top/to-top.component';
+import { ArmoryComponent } from './pages/armory/armory.component';
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { ToTopComponent } from './to-top/to-top.component';
     PatchesComponent,
     FaqComponent,
     GonFooterComponent,
-    ToTopComponent
+    ToTopComponent,
+    ArmoryComponent
   ],
   imports: [
     BrowserModule,
