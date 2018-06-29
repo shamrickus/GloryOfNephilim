@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {Button} from "./app.module";
 import {Router, RouterOutlet} from "@angular/router";
+import {PATCHES} from "./pages/patches/patches.component";
 
 @Component({
   selector: 'gon-root',
@@ -33,4 +34,10 @@ export class AppComponent implements OnInit{
 	fontType(): string {
 		return this.fancyText ? "diablo" : "normal";
 	}
+
+    GetLastUpdate(): string {
+		let date = new Date(PATCHES[0].date);
+		console.log(date);
+       return date.getDate().toString() + "/" + (date.getMonth() + 1).toString() + "/" + date.getFullYear().toString();
+    }
 }
