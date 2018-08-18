@@ -8,6 +8,16 @@ export interface IPatches {
 
 export const PATCHES = [
     <IPatches>{
+        date: '08/17/2018',
+        changes: ["Increased monster levels by 5 in Normal/Nightmare",
+        "Necromancer summons move speed reduced",
+        "Necormancer golem damage increased",
+        "Druid summons damage increased",
+        "Spirits and vines now have 90% damage reduction",
+        "Rare rune drop chance doubled"],
+        collapsed: true
+    },
+    <IPatches>{
 		date: '05/30/2018',
 		changes: [ "Difficulty Balance Tweaks"],
 		collapsed: true
