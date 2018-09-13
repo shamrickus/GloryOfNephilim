@@ -8,6 +8,15 @@ export interface IPatches {
 
 export const PATCHES = [
 	<IPatches>{
+		date: '09/13/2018',
+		changes: [
+			"Fixed an issue with Barbarian hireling's Thorns aura",
+			"Changed Blade Sentry, Blade Fury, Blade Shield mana cost",
+			"Increase gold drop chance"
+		],
+		collapsed: true
+	},
+	<IPatches>{
 		date: '08/28/2018',
         changes: [
         	"Removed/reduced cooldown on some skills"
