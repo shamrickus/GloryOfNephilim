@@ -23,6 +23,7 @@ export class AppComponent implements OnInit{
 
 	constructor(public router: Router) { }
 	ngOnInit(): void {
+	    console.log(this.router.url);
 		this.router.events.subscribe(res => {
 			this.activeLink = this.buttons.indexOf(
 				this.buttons.find(tab => tab.path === "." + this.router.url)
@@ -36,7 +37,6 @@ export class AppComponent implements OnInit{
 
     GetLastUpdate(): string {
 		let date = new Date(PATCHES[0].date);
-		console.log(date);
        return date.getDate().toString() + "/" + (date.getMonth() + 1).toString() + "/" + date.getFullYear().toString();
     }
 }

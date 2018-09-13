@@ -11,8 +11,7 @@ const routes: Routes = [
     {path: "changelog/:id", component: ChangelogComponent},
 	{path: "patches", component: PatchesComponent},
 	{path: "faq", component: FaqComponent},
-	{path: "", component: HomeComponent},
-	{path: "", component: HomeComponent}
+	{path: "", redirectTo: "home", pathMatch: 'full'}
 ];
 
 @NgModule({

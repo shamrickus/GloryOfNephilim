@@ -7,6 +7,28 @@ export interface IPatches {
 }
 
 export const PATCHES = [
+	<IPatches>{
+		date: '08/28/2018',
+        changes: [
+        	"Removed/reduced cooldown on some skills"
+        ],
+		collapsed: true
+	},
+    <IPatches>{
+        date: '08/23/2018',
+        changes: [
+            "Barbarian's Battle Command skill now has full power at level 1",
+            "Berserk no longer has bonus from Battle Command,  bonus from Howl doubled to compensate",
+            "Modified some unique items to reflect changes to skills"
+		],
+        collapsed: true
+    },
+    <IPatches>{
+        date: '08/19/2018',
+        changes: ["Most skills for ever class was changed - buffed, nerfed or rework.",
+		"NOTE: Please respec your character(s) skills"],
+        collapsed: true
+    },
     <IPatches>{
         date: '08/17/2018',
         changes: ["Increased monster levels by 5 in Normal/Nightmare",
