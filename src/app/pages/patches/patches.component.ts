@@ -8,6 +8,14 @@ export interface IPatches {
 
 export const PATCHES = [
 	<IPatches>{
+		date: '10/09/2018',
+		changes: [
+		    "Reduced required experience after level 80",
+			"Fixed various bugs with assassin skills"
+		],
+		collapsed: true
+	},
+	<IPatches>{
 		date: '09/13/2018',
 		changes: [
 			"Fixed an issue with Barbarian hireling's Thorns aura",
