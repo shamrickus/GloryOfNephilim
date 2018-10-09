@@ -1,3 +1,48 @@
-<p>
-  armory works!
-</p>
+<table mat-table matSort [dataSource]="dataSource" (matSortChange)="sortData($event)">
+    <ng-container matColumnDef="Name">
+        <th mat-sort-header mat-header-cell *matHeaderCellDef> Name </th>
+        <td mat-cell *matCellDef="let element;"> {{element.Name}} </td>
+        <td mat-footer-cell *matFooterCellDef colspan="5">
+            <div fxLayout="column" style="margin: 5px">
+                    <div fxLayout="row">
+                        <mat-form-field fxFlex="grow">
+                            <input matInput placeholder="Filter" (keyup)="filter($event.target.value)" />
+                        </mat-form-field>
+                        <button mat-flat-button>Advanced</button>
+                    </div>
+            </div>
+        </td>
+    </ng-container>
+    <ng-container matColumnDef="Properties">
+        <th mat-sort-header mat-header-cell *matHeaderCellDef> Properties </th>
+        <td mat-cell *matCellDef="let element;">
+            <p *ngFor="let prop of element.Properties">
+                {{prop}}
+            </p>
+        </td>
+    </ng-container>
+    <ng-container matColumnDef="Runes">
+        <th mat-sort-header mat-header-cell *matHeaderCellDef> Runes </th>
+        <td mat-cell *matCellDef="let element;">
+            <div *ngFor="let rune of element.Runes">
+                {{rune}}
+            </div>
+        </td>
+    </ng-container>
+    <ng-container matColumnDef="Type">
+        <th mat-sort-header mat-header-cell *matHeaderCellDef> Type </th>
+        <td mat-cell *matCellDef="let element;"> {{element.Type}} </td>
+    </ng-container>
+    <ng-container matColumnDef="ItemLevel">
+        <th mat-sort-header mat-header-cell *matHeaderCellDef> Item Level </th>
+        <td mat-cell *matCellDef="let element;"> {{element.ItemLevel}} </td>
+    </ng-container>
+    <ng-container matColumnDef="LevelRequirement">
+        <th mat-sort-header mat-header-cell *matHeaderCellDef> Level Req </th>
+        <td mat-cell *matCellDef="let element;"> {{element.LevelRequirement}} </td>
+    </ng-container>
+
+    <tr mat-header-row  *matHeaderRowDef="displayColumns; sticky: true"> </tr>
+    <tr mat-row *matRowDef="let row; columns: displayColumns;"></tr>
+    <tr class="sticky-footer" mat-footer-row *matFooterRowDef="['Name']"> </tr>
+</table>

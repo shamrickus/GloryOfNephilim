@@ -1,11 +1,11 @@
-<div fxLayout="column">
+<div fxLayout="column" fxFlex="grow">
     <div fxLayout="row" class="headerRow">
         <div fxLayout="column" id="logoContainer">
             <img id="logo" src="../assets/images/logo.gif" />
             <div>Glory of Nephilim</div>
         </div>
-        <div fxFlex></div>
-        <div fxLayout="column">
+        <div fxFlex="grow" id="headerSpacer"></div>
+        <div fxLayout="column" id="quickLinks">
             <span class="lastUpdated">Last Updated: {{GetLastUpdate()}}</span>
             <div fxLayout="row">
                 <mat-slide-toggle (change)="fancyText = !fancyText"></mat-slide-toggle>
@@ -13,7 +13,7 @@
             </div>
         </div>
     </div>
-    <div fxLayout="row">
+    <div fxFlex="grow" fxLayout="row">
        <gon-sidebar [buttons]="buttons"></gon-sidebar>
         <gon-card class="{{fontType()}}" [type]="0">
             <main>

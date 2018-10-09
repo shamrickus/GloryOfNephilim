@@ -3,11 +3,18 @@ $imagesPath: "../assets/images";
 
  gon-home, gon-card {
   width: 100%;
-  margin: 0 15px 100px 165px;
+  margin: 0 15px 100px 5px;
 }
 
 gon-card.diablo {
   font-family: diablo, serif;
+}
+
+div#quickLinks{
+  min-width: 260px;
+}
+div#headerSpacer {
+  min-width: 199px;
 }
 
 gon-card.normal {
@@ -15,8 +22,7 @@ gon-card.normal {
 }
 
 gon-footer {
-  position: fixed;
-  bottom: 0;
+  min-width: 640px;
   width: 100%;
   z-index:5;
 }
@@ -88,31 +94,4 @@ h4 {
 
   margin-bottom: 75px;
 
-}
-
-#footerContainer {
-  width: calc(100% - 60px);
-  margin-right: 15px;
-  margin-left: 15px;
-  position: fixed;
-  z-index: 11;
-  bottom: 0;
-
-  md-card {
-    width:100%;
-    background: black;
-    color: white;
-    position: relative;
-    padding: 22px 65px 22px 72px;
-    margin-bottom: 0px !important;
-
-    span#footerText {
-      font-size: 	0.7em;
-
-      span {
-        display:block;
-        float:right;
-      }
-    }
-  }
 }

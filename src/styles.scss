@@ -1,8 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
-@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import '~@angular/material/prebuilt-themes/pink-bluegrey.css';
 $fontsPath: "/assets/font";
 $imagesPath: "/assets/images";
 
+$minWidth: '640px';
+.mat-sort-header-container {
+  justify-content: center !important;
+  button {
+    margin-left: 12px;
+  }
+}
 .noselect {
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Safari */
@@ -40,4 +47,9 @@ hr {
 
 h1 {
   text-align: center;
+}
+
+gon-root {
+  min-height: 100%;
+  display: block;
 }

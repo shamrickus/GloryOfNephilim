@@ -1,15 +1,51 @@
-import { Component, OnInit } from '@angular/core';
+import {ChangeDetectorRef, Component, OnInit} from '@angular/core';
+import {ArmoryService, IItem, SortItems} from "../../armory.service";
+import {MatTableDataSource, Sort} from "@angular/material";
 
 @Component({
-  selector: 'app-armory',
-  templateUrl: './armory.component.html',
-  styleUrls: ['./armory.component.scss']
+    selector: 'app-armory',
+    templateUrl: './armory.component.html',
+    styleUrls: ['./armory.component.scss']
 })
 export class ArmoryComponent implements OnInit {
+    private itemsSource: IItem[];
+    private types: string[];
+    public dataSource: MatTableDataSource<IItem> = new MatTableDataSource<IItem>();
+    public displayColumns: string[];
 
-  constructor() { }
+    constructor(private _armory: ArmoryService, private _change: ChangeDetectorRef) {
+    }
 
-  ngOnInit() {
-  }
+    updateItems(items: IItem[]) {
+        this.itemsSource = items;
+        this.dataSource.data = items;
+        this.types = this.getTypes();
+    }
+
+    ngOnInit() {
+        this.updateItems(this._armory.getItems());
+        this._armory.change.subscribe(e => {
+            this.updateItems(e);
+        });
+        this.displayColumns = ['Name', "Runes", "Type", "Properties"];
+    }
+
+    filter(filterValue: string) {
+        this.dataSource.filter = filterValue;
+   }
+
+    getTypes() {
+        let ret = [];
+        for(let item of this.itemsSource) {
+            if(ret.indexOf(item.Type) == -1)
+               ret.push(item.Type);
+        }
+        return ret;
+    }
+
+    sortData(sort: Sort) {
+        this.dataSource.data = SortItems(sort, this.dataSource.data);
+        this._change.detectChanges();
+    }
 
 }

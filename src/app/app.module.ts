@@ -19,6 +19,8 @@ import { FaqComponent } from './pages/faq/faq.component';
 import { GonFooterComponent } from './gon-footer/gon-footer.component';
 import { ToTopComponent } from './to-top/to-top.component';
 import { ArmoryComponent } from './pages/armory/armory.component';
+import {ArmoryService} from "./armory.service";
+import {MdePopoverModule} from "@material-extended/mde";
 
 
 @NgModule({
@@ -42,10 +44,11 @@ import { ArmoryComponent } from './pages/armory/armory.component';
     BrowserAnimationsModule,
     AppRoutingModule,
     FlexLayoutModule,
-    MaterialModule
+    MaterialModule,
+  MdePopoverModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [ArmoryService],
+  bootstrap: [AppComponent],
 })
 export class AppModule { }
 
@@ -54,3 +57,4 @@ export interface Button {
   path: string;
   active: boolean;
 }
+

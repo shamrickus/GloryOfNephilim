@@ -1,10 +1,13 @@
-<mat-card class="gonMenu" fxLayout="column">
-    <div class="header"></div>
-    <div class="content" fxLayout="column">
-        <div *ngFor="let button of buttons">
-            <gon-button [pop]="false" [button]="button"></gon-button>
-            <div *ngIf="!last" class="menuSpacer"></div>
+<div fxLayout="column">
+    <mat-card class="gonMenu" fxLayout="column">
+        <div class="header"></div>
+        <div class="content" fxLayout="column">
+            <div *ngFor="let button of buttons">
+                <gon-button [pop]="false" [button]="button"></gon-button>
+                <div *ngIf="!last" class="menuSpacer"></div>
+            </div>
         </div>
-    </div>
-    <div class="footer"></div>
-</mat-card>
+        <div class="footer"></div>
+    </mat-card>
+    <button style="margin: 277px 5px 0 5px; width: 100px;" mat-button>Test</button>
+</div>

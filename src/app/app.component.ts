@@ -37,7 +37,6 @@ export class AppComponent implements OnInit{
 
     GetLastUpdate(): string {
 		let date = new Date(PATCHES[0].date);
-		console.log(date);
        return date.getDate().toString() + "/" + (date.getMonth() + 1).toString() + "/" + date.getFullYear().toString();
     }
 }
