@@ -39,4 +39,11 @@ div {
       background: url("../../assets/images/menu/menuFooter.png");
     }
   }
+  #toggle {
+    position: fixed;
+    left: 5px;
+    top: 460px;
+    width: 50px;
+    background: white;
+  }
 }

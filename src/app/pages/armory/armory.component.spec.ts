@@ -1,6 +1,14 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ArmoryComponent } from './armory.component';
+import {GonButtonComponent} from "../../gon-button/gon-button.component";
+import {GonFooterComponent} from "../../gon-footer/gon-footer.component";
+import {MaterialModule} from "../../app.material";
+import {RouterTestingModule} from "@angular/router/testing";
+import {GonCardComponent} from "../../gon-card/gon-card.component";
+import {SidebarComponent} from "../../sidebar/sidebar.component";
+import {ToTopComponent} from "../../to-top/to-top.component";
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 
 describe('ArmoryComponent', () => {
   let component: ArmoryComponent;
@@ -8,8 +16,16 @@ describe('ArmoryComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ArmoryComponent ]
-    })
+imports: [
+        RouterTestingModule,
+        BrowserAnimationsModule,
+        MaterialModule,
+      ],
+      declarations: [
+          ArmoryComponent,
+          GonButtonComponent,
+          GonCardComponent,
+      ],    })
     .compileComponents();
   }));
 

@@ -1,6 +1,8 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { GonCardComponent } from './gon-card.component';
+import {MaterialModule} from "../app.material";
+import {RouterTestingModule} from "@angular/router/testing";
 
 describe('GonCardComponent', () => {
   let component: GonCardComponent;
@@ -8,7 +10,13 @@ describe('GonCardComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ GonCardComponent ]
+        imports: [
+            MaterialModule,
+            RouterTestingModule
+        ],
+        declarations: [
+            GonCardComponent,
+        ],
     })
     .compileComponents();
   }));

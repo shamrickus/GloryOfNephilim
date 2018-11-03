@@ -5,6 +5,7 @@ mat-card {
   background: black;
   color: white;
   position: relative;
+  min-width: 625px;
 
   div {
     &.l, &.r {
@@ -43,7 +44,6 @@ mat-card {
   &.prim {
     .gonContent {
       padding: 23px 20px 98px 35px;
-      min-width: 500px;
       min-height: 300px;
       position: relative;
     }

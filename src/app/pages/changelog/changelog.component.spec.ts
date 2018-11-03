@@ -1,6 +1,13 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ChangelogComponent } from './changelog.component';
+import {GonButtonComponent} from "../../gon-button/gon-button.component";
+import {RouterTestingModule} from "@angular/router/testing";
+import {GonCardComponent} from "../../gon-card/gon-card.component";
+import {MaterialModule} from "../../app.material";
+import {MatIconModule} from "@angular/material";
+import {HeaderComponent} from "./header/header.component";
+import {ChangeComponent} from "./change/change.component";
 
 describe('ChangelogComponent', () => {
   let component: ChangelogComponent;
@@ -8,7 +15,17 @@ describe('ChangelogComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ChangelogComponent ]
+        imports: [
+            MaterialModule,
+            RouterTestingModule
+        ],
+        declarations: [
+            ChangelogComponent,
+            GonButtonComponent,
+            GonCardComponent,
+            ChangeComponent,
+            HeaderComponent
+        ],
     })
     .compileComponents();
   }));

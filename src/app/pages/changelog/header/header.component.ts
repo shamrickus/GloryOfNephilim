@@ -11,6 +11,8 @@ export class HeaderComponent implements OnInit {
     @Output() onClick = new EventEmitter<string>();
 
     constructor() {
+        if(this.change == null)
+            this.change =  {subCat: null , name: "", href: "", collapsed: true, changes: []};
     }
 
     ngOnInit() {

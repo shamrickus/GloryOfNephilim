@@ -19,8 +19,7 @@ import { FaqComponent } from './pages/faq/faq.component';
 import { GonFooterComponent } from './gon-footer/gon-footer.component';
 import { ToTopComponent } from './to-top/to-top.component';
 import { ArmoryComponent } from './pages/armory/armory.component';
-import {ArmoryService} from "./armory.service";
-import {MdePopoverModule} from "@material-extended/mde";
+import {ArmoryService} from "./pages/armory/armory.service";
 
 
 @NgModule({
@@ -45,7 +44,6 @@ import {MdePopoverModule} from "@material-extended/mde";
     AppRoutingModule,
     FlexLayoutModule,
     MaterialModule,
-  MdePopoverModule
   ],
   providers: [ArmoryService],
   bootstrap: [AppComponent],

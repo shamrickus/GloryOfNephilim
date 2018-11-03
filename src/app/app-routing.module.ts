@@ -13,8 +13,7 @@ const routes: Routes = [
 	{path: "armory", component: ArmoryComponent},
 	{path: "patches", component: PatchesComponent},
 	{path: "faq", component: FaqComponent},
-	{path: "", component: HomeComponent},
-	{path: "", component: HomeComponent}
+	{path: "", redirectTo: "home", pathMatch: 'full'}
 ];
 
 @NgModule({

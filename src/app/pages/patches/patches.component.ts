@@ -8,6 +8,87 @@ export interface IPatches {
 
 export const PATCHES = [
     <IPatches>{
+        date: '10/28/2018',
+        changes: [
+               "Fixed Thorns aura and Iron Maiden curse",
+                "Removed self-repair from indestructible unique items",
+                "Changed shop potions",
+                "Fixed some skill descriptions ",
+        ],
+        collapsed:true
+    },
+	<IPatches>{
+        date: '10/24/2018',
+        changes: [
+            "Changed low level summoning skills",
+            "Afterlife and Arcane Shard jewels buffed",
+            "Reduced Holy Bolt healing",
+            "Reduced radius of Sanctuary Aura",
+            "Reduced junk from from hell cows",
+        ],
+        collapsed:true
+	},
+    <IPatches>{
+        date: '10/13/2018',
+        changes: [
+            "Mana Potions buffed.",
+			"Changed Sorceress' Energy Shield",
+			"Doubled bonuses from warped recipes",
+			"Ormus Robes can now roll all Sorceress' skills",
+			"Added heirloom sword and sash (uniques)"
+        ],
+        collapsed: true
+    },
+	<IPatches>{
+		date: '10/09/2018',
+		changes: [
+		    "Reduced required experience after level 80",
+			"Fixed various bugs with assassin skills"
+		],
+		collapsed: true
+	},
+	<IPatches>{
+		date: '09/13/2018',
+		changes: [
+			"Fixed an issue with Barbarian hireling's Thorns aura",
+			"Changed Blade Sentry, Blade Fury, Blade Shield mana cost",
+			"Increase gold drop chance"
+		],
+		collapsed: true
+	},
+	<IPatches>{
+		date: '08/28/2018',
+        changes: [
+        	"Removed/reduced cooldown on some skills"
+        ],
+		collapsed: true
+	},
+    <IPatches>{
+        date: '08/23/2018',
+        changes: [
+            "Barbarian's Battle Command skill now has full power at level 1",
+            "Berserk no longer has bonus from Battle Command,  bonus from Howl doubled to compensate",
+            "Modified some unique items to reflect changes to skills"
+		],
+        collapsed: true
+    },
+    <IPatches>{
+        date: '08/19/2018',
+        changes: ["Most skills for ever class was changed - buffed, nerfed or rework.",
+		"NOTE: Please respec your character(s) skills"],
+        collapsed: true
+    },
+    <IPatches>{
+        date: '08/17/2018',
+        changes: ["Increased monster levels by 5 in Normal/Nightmare",
+        "Necromancer summons move speed reduced",
+        "Necormancer golem damage increased",
+        "Druid summons damage increased",
+        "Spirits and vines now have 90% damage reduction",
+        "Rare rune drop chance doubled"],
+        collapsed: true
+    },
+    <IPatches>{
 		date: '05/30/2018',
 		changes: [ "Difficulty Balance Tweaks"],
 		collapsed: true

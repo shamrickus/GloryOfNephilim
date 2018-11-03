@@ -1,5 +1,5 @@
 import {ChangeDetectorRef, Component, OnInit} from '@angular/core';
-import {ArmoryService, IItem, SortItems} from "../../armory.service";
+import {ArmoryService, IItem, IProperty, ISocketable, SortItems} from "./armory.service";
 import {MatTableDataSource, Sort} from "@angular/material";
 
 @Component({
@@ -19,6 +19,15 @@ export class ArmoryComponent implements OnInit {
     updateItems(items: IItem[]) {
         this.itemsSource = items;
         this.dataSource.data = items;
+        this.dataSource.filterPredicate = (data:IItem, filter: string) => {
+            return data.Name.indexOf(filter) != -1 ||
+            data.LevelRequirement.toString().indexOf(filter) != -1 ||
+            (data.Runes as ISocketable[]).map(r => r.Name).join("").indexOf(filter) != -1 ||
+            data.Version.toString().indexOf(filter) != -1 ||
+            (data.Properties as string[]).join("").indexOf(filter) != -1 ||
+            data.Type.indexOf(filter) != -1 ||
+            data.Runes.length.toString().indexOf(filter) != -1;
+        };
         this.types = this.getTypes();
     }
 
@@ -27,7 +36,7 @@ export class ArmoryComponent implements OnInit {
         this._armory.change.subscribe(e => {
             this.updateItems(e);
         });
-        this.displayColumns = ['Name', "Runes", "Type", "Properties"];
+        this.displayColumns = ['Name', "Runes", "Type", "Version", "LevelRequirement", "Properties"];
     }
 
     filter(filterValue: string) {

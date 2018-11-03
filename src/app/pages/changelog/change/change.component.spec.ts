@@ -1,6 +1,12 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ChangeComponent } from './change.component';
+import {RouterTestingModule} from "@angular/router/testing";
+import {GonButtonComponent} from "../../../gon-button/gon-button.component";
+import {MaterialModule} from "../../../app.material";
+import {ChangelogComponent} from "../changelog.component";
+import {GonCardComponent} from "../../../gon-card/gon-card.component";
+import {HeaderComponent} from "../header/header.component";
 
 describe('ChangeComponent', () => {
   let component: ChangeComponent;
@@ -8,7 +14,17 @@ describe('ChangeComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ChangeComponent ]
+        imports: [
+            MaterialModule,
+            RouterTestingModule
+        ],
+        declarations: [
+            ChangeComponent,
+            ChangelogComponent,
+            GonButtonComponent,
+            GonCardComponent,
+            HeaderComponent
+        ],
     })
     .compileComponents();
   }));

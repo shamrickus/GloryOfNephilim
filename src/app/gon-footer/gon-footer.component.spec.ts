@@ -1,6 +1,10 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { GonFooterComponent } from './gon-footer.component';
+import {MaterialModule} from "../app.material";
+import {RouterTestingModule} from "@angular/router/testing";
+import {GonButtonComponent} from "../gon-button/gon-button.component";
+import {GonCardComponent} from "../gon-card/gon-card.component";
 
 describe('GonFooterComponent', () => {
   let component: GonFooterComponent;
@@ -8,8 +12,14 @@ describe('GonFooterComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ GonFooterComponent ]
-    })
+    imports: [
+            MaterialModule,
+            RouterTestingModule
+        ],
+        declarations: [
+            GonFooterComponent,
+            GonCardComponent,
+        ],    })
     .compileComponents();
   }));
 

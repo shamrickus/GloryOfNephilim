@@ -1,6 +1,10 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { HeaderComponent } from './header.component';
+import {RouterTestingModule} from "@angular/router/testing";
+import {MaterialModule} from "../../../app.material";
+import {ChangeComponent} from "../change/change.component";
+import {ChangelogComponent} from "../changelog.component";
 
 describe('HeaderComponent', () => {
   let component: HeaderComponent;
@@ -8,8 +12,13 @@ describe('HeaderComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ HeaderComponent ]
-    })
+        imports: [
+            MaterialModule,
+            RouterTestingModule
+        ],
+        declarations: [
+            HeaderComponent
+        ],    })
     .compileComponents();
   }));
 

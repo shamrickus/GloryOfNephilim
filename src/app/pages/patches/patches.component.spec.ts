@@ -1,6 +1,11 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { PatchesComponent } from './patches.component';
+import {FaqComponent} from "../faq/faq.component";
+import {RouterTestingModule} from "@angular/router/testing";
+import {MaterialModule} from "../../app.material";
+import {GonCardComponent} from "../../gon-card/gon-card.component";
+import {GonButtonComponent} from "../../gon-button/gon-button.component";
 
 describe('PatchesComponent', () => {
   let component: PatchesComponent;
@@ -8,7 +13,13 @@ describe('PatchesComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ PatchesComponent ]
+        imports: [
+            MaterialModule,
+            RouterTestingModule
+        ],
+        declarations: [PatchesComponent,
+            GonButtonComponent,
+            GonCardComponent]
     })
     .compileComponents();
   }));

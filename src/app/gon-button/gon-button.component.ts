@@ -17,15 +17,19 @@ export class GonButtonComponent implements OnInit {
   }
 
   getClass(): string {
-  	return this.button.active ? "touched" : "untouched";
+  	return this.getActive() ? "touched" : "untouched";
   }
 
   getText(): string {
-    return this.button.text;
+      return this.button ? this.button.text : "";
+  }
+
+  getActive(): boolean {
+      return this.button && this.button.active;
   }
 
   onClick() {
-      if(this.pop) {
+      if(this.pop && this.button) {
           this.button.active = true;
           setTimeout(() => {
               this.button.active = false;
