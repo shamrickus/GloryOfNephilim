@@ -1,7 +1,21 @@
 from base64 import decodebytes
-
+from subprocess import call
 import paramiko
-import pysftp, sys, os
+import pysftp, sys, os, zipfile
+
+print("Building")
+call(['.\\node_modules\\.bin\\ng.cmd', 'build', '--prod'])
+def zip(src, dst):
+    zf = zipfile.ZipFile("%s.zip" % (dst), "w", zipfile.ZIP_DEFLATED)
+    abs_src = os.path.abspath(src)
+    for dirname, subdirs, files in os.walk(src):
+        for filename in files:
+            absname = os.path.abspath(os.path.join(dirname, filename))
+            arcname = absname[len(abs_src) + 1:]
+            zf.write(absname, arcname)
+    zf.close()
+print("Zipping")
+zip('dist', 'dist')
 
 pathToEnv='src/environments/environment.prod.ts'
 zipFile = "dist.zip"
