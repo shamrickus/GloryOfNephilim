@@ -4,6 +4,8 @@
 /dist
 /tmp
 /out-tsc
+*.zip
+*.prod.ts
 
 # dependencies
 /node_modules
