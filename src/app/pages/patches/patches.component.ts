@@ -8,6 +8,38 @@ export interface IPatches {
 
 export const PATCHES = [
     <IPatches>{
+        date:'11/14/2018',
+        changes: [
+            '!!!WARNING!!! Take save folder from MODS->Glory of Nephilim (or MP) and put in safe place, after that delete Glory of Nephilim (or MP) folder. Next update mod as usual.',
+            'Added splash damage affix to magic and rare melee weapons',
+            'Unique and set melee weapons also have it but with 100% chance',
+            'Fixed potion shops',
+            'Max level increased to 125'
+        ],
+        collapsed: true
+    },
+	<IPatches> {
+        date: '11/13/2018',
+        changes: [
+        	"Added auto-pickup gold",
+			"Added \"100% hit change\" feature",
+			"Added \"full protection while running\" feature",
+			"Removed Ancients Level Up Experience Cap",
+			"Removed Experience Penalty beyond 2 screens",
+			"Remove monster lvl/character lvl difference of 10 Experience Penalty",
+			"/nopickup option enabled by default",
+			"Added UVlod title to thanks DevUrandom for coding that stuff"
+        ]
+	},
+	<IPatches> {
+		date: '11/06/2018',
+		changes: [
+			'Removed dodge-type oskills from items to avoid animation glitches. Replace by Iron Skin',
+			'Various length tweaks for some skills (overall damage was not touched)'
+		],
+		collapsed: true
+	},
+    <IPatches>{
         date: '10/28/2018',
         changes: [
                "Fixed Thorns aura and Iron Maiden curse",
