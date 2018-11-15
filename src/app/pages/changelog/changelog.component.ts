@@ -13,7 +13,7 @@ export const CHANGES = <IChange[]> [
 	collapsed: false,
 	name: "General",
 	href: "general",
-	changes: ["Drop of valuable items improved about 10 times","All missiles speed is 150%","Increased level cap to 111","In Travincal added mob in honor of the creator of mod Battle for elements - True Mage (My favorite mod)","All belts have 4 rows of cells potions (with a visual bug), as well as a character without a belt at all (additional lines can not be opened, but they are used in the selection and purchase of potions)","New unique items", "Efficiency of hp and mana leech reduced", "Multiple minor changes of all skills", "Added gemwords (collected only from gems of the same type and quality)"],
+	changes: ["Drop of valuable items improved about 10 times","All missiles speed is 150%","Increased level cap to 125","In Travincal added mob in honor of the creator of mod Battle for elements - True Mage (My favorite mod)","All belts have 4 rows of cells potions (with a visual bug), as well as a character without a belt at all (additional lines can not be opened, but they are used in the selection and purchase of potions)","New unique items", "Efficiency of hp and mana leech reduced", "Multiple minor changes of all skills", "Added gemwords (collected only from gems of the same type and quality)"],
 	subCat: [ <IChange>{
 		collapsed: false,
 		name: "Resistances",
