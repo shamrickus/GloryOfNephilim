@@ -16,10 +16,9 @@ export const CHANGES = <IChange[]> [
 	changes: ["Drop of valuable items improved about 10 times","All missiles speed is 150%","Increased level cap to 125","In Travincal added mob in honor of the creator of mod Battle for elements - True Mage (My favorite mod)","All belts have 4 rows of cells potions (with a visual bug), as well as a character without a belt at all (additional lines can not be opened, but they are used in the selection and purchase of potions)","New unique items", "Efficiency of hp and mana leech reduced", "Multiple minor changes of all skills", "Added gemwords (collected only from gems of the same type and quality)"],
 	subCat: [ <IChange>{
 		collapsed: false,
-		name: "Resistances",
-		href: "res",
-		changes: ["Monster: Physical/Magical 0/10/20","Monster: Elemental 0/30/60",
-		]
+		name: "Difficulty Settings",
+		href: "ds",
+		changes: ["Commands /players X, where 1 <= X <= 127","Higher the number - stronger monsters","Default is 1" ]
 	},
 		<IChange>{
 			collapsed: false,
@@ -48,7 +47,8 @@ export const CHANGES = <IChange[]> [
 		collapsed: false,
 		name: "Mercenary",
 		href: "merc",
-		changes: ["Rogue Scout Combat - Multiple Shot, Penetrate, Attract, Avoid, Blessed Aim", "Rogue Scout Fire - Dodge, Immolation Arrow, Exploding Arrow ","Rogue Scout Ice - Dodge, Freezing Arrow, Ice Arrow ","Desert Mercenary Comb-Normal - Jab, Prayer ","Desert Mercenary Comb-Nightmare - Jab, Concentration ","Desert Mercenary Comb-Hell - Jab, Sanctuary ","Desert Mercenary Def-Normal - Jab, Vigor ","Desert Mercenary Def-Nightmare - Jab, Holy Freeze ","Desert Mercenary Def-Hell - Jab, Vigor ","Desert Mercenary Off-Normal - Jab, Blessed Aim ","Desert Mercenary Off-Nightmare - Jab, Might ","Desert Mercenary Off-Hell - Jab, Fanaticism ","Eastern Sorceror Fire - Meteor, Fire Ball, Hydra, Fire Mastery, Resist Fire","Eastern Sorceror Cold - Glacial Spike, Chilling Armor, Cold Mastery, Frozen Orb, Resist Cold","Eastern Sorceror Ltng - Lightning Mastery, Lightning Chain, Lightning, Static Field, Resist Lightning","Eastern Sorcerer Bone Mange - Bone Spear, Bone Spirit, Teeth, Salvation", "Barbarian - Bash, Concentrate, Battle Cry, Defiance, Sword Mastery","Barbarian - Bash, Berserk, Battle Cry, Thorns, Sword Mastery"]
+		changes: ["Rogue Scout Fire - Dodge, Blessed Aim, Immolation Arrow, Exploding Arrow, Fire Arrow", "Rogue Scout Ice - Dodge, Blessed Aim, Freezing Arrow, Ice Arrow, Cold Arrow", "Rogue Scout Combat - Multiple Shot, Penetrate, Blessed Aim, Magic Arrow, Guided Arrow", "Desert Mercenary Combat - Jab, Prayer, Pole Arm Mastery, Spear Mastery", "Desert Mercenary Defensive - Jab, Defiance, Pole Arm Mastery, Spear Mastery", "Desert Mercenary Offensive - Jab, Might, Pole Arm Mastery, Spear Mastery", "Eastern Sorcerer Fire - Meteor, Fire Ball, Fire Bolt, Hydra, Fire Mastery, Resist Fire", "Eastern Sorcerer Cold - Glacial Spike, Ice Bolt, Cold Mastery, Frozen Orb, Resist Cold", "Eastern Sorcerer Lightning - Lightning Mastery, Chain Lightning, Lightning, Charged Bolt, Resist Lightning", "Eastern Sorcerer Bone - Bone Spear, Bone Spirit, Teeth, Concentration", "Barbarian - Bash, Concentrate, Battle Cry, Fanaticism, Sword Mastery", "Barbarian - Bash, Berserk, Battle Cry, Thorns, Sword Mastery"]
+
 	},
 	<IChange>{
 		collapsed: false,
@@ -75,15 +75,7 @@ export const CHANGES = <IChange[]> [
 				collapsed: false,
 				name: "Changing Item",
 				href: "change",
-				changes :["Etherealization - Rune Zod x1 + Jewel + item","Add +1 to all skills - Rune Zod x3 + Jewel + item","Add self-repair - Rune Zod x2 + Jewel + item","Adding sockets -? Perfect Skull x (how much to socket) + Jewel + item (including rings and amulets) + Key	","Remove gems (or runes) from the socket - Perfect Skull + item + Key","Random unique Jewel - Jewel x4","Random unique Jewel - a unique Jewel + Jewel","Magic ring (or amulet) to rare - magic ring (or amulet) x7","Magic Charm to rare - magic Charm (of the same size) x7 + Jewel","Reroll class item (or Circlet) - class item (or Circlet) + Jewel x1","Reroll Ormus 'Robe - Ormus' Robe + Jewel","Reroll magic (or rare) rings (or amulets) - magic (or rare) ring (or amulet) x2","Reroll magic (or rare) Charms - magic (or rare) charm + Jewel","Rerolling rings, amulets and charms depends only from character level. Item level of output item is 75% of current character level. Rerolling class items and circlets always gives 99 item level output."]
-			},
-			<IChange>{
-				collapsed: false,
-				name: "Upgrade Item",
-				href: "upgrade",
-				changes: ["Improve item to Exceptional - Golden Potion + Exceptional item (nonsocketed, rare, set, or unique)",
-					"Improve item to Elite - Golden Potion + Exceptional item (nonsocketed, rare, set, or unique)"
-				]
+				changes :["Etherealization - Rune Zod x1 + Jewel + item","Add +1 to all skills - Rune Zod x3 + Jewel + item","Add self-repair - Rune Zod x2 + Jewel + item","Adding sockets -? Perfect Skull x (how much to socket) + Jewel + item (including rings and amulets) + Key	","Remove gems (or runes) from the socket - Perfect Skull + item + Key","Random unique Jewel - Jewel x4","Random unique Jewel - a unique Jewel + Jewel","Magic ring (or amulet) to rare - magic ring (or amulet) x3","Magic Charm to rare - magic Charm (of the same size) x3 + Jewel","Reroll class item (or Circlet) - class item (or Circlet) + Jewel x1","Reroll Ormus 'Robe - Ormus' Robe + Jewel","Reroll magic (or rare) rings (or amulets) - magic (or rare) ring (or amulet) x2","Reroll magic (or rare) Charms - magic (or rare) charm x 2 + Jewel","Rerolling rings, amulets and charms depends only from character level. Item level of output item is 75% of current character level. Rerolling class items and circlets always gives 99 item level output."]
 			},
 			<IChange>{
 				collapsed: false,
@@ -96,7 +88,7 @@ export const CHANGES = <IChange[]> [
 				name:"Timeless Item",
 				href:"timeless",
 				changes: ["Looped Time Fragment - Warped Rune x3 + Golden Potion","Make item Timeless - Superior nonsocketed gloves or boots + Looped Time Fragment + Jewel","Add skill on Timeless item (+3 lvl req) - Timeless item + Perfect Gem (depends on class) + Jewel x3 + Key x? (depends on skill) + Looped Time Fragment",
-					"Class only skills limit to 7, oskills limited only by your level. Oskills for native classes will be reduced to 3"
+					"Class only skills limit to 7, oskills limited only by your level. Oskills for native classes will be reduced to 3. Skill properties increase level requirements by 6"
 				],
 				subCat: [
 					<IChange>{

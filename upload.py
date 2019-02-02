@@ -49,4 +49,12 @@ print("Updating server")
 ssh = paramiko.SSHClient()
 ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy)
 ssh.connect(hostname=srv, username=usr, password=pw)
-ssh.exec_command("./var/www/up.sh")
+stdin, stdout, stderr = ssh.exec_command("(cd /var/www; ./up.sh)", get_pty=True)
+
+print("StdOut")
+for line in iter(stdout.readline, ""):
+    print(line, end="")
+print("StdErr")
+for line in iter(stderr.readline, ""):
+    print(line, end="")
+
