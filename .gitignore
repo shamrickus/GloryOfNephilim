@@ -5,7 +5,9 @@
 /tmp
 /out-tsc
 *.zip
-*.prod.ts
+/*.prod.ts
+/*.pyc
+
 
 # dependencies
 /node_modules
@@ -42,3 +44,18 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+/bootstrap/compiled.php
+/vendor
+composer.phar
+composer.lock
+.env.*.php
+.env.php
+.DS_Store
+Thumbs.db
+public/node_modules/*
+public/typings/*
+public/source/**/*.js
+public/source/**/*.css
+
+*.js
+app/config/*

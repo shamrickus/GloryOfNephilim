@@ -7,6 +7,259 @@ export interface IPatches {
 }
 
 export const PATCHES = [
+	/*
+	<IPatches>{
+		date:'dd/mm/2019',
+		changes: [
+
+		],
+		collapsed: true
+	},
+	*/
+	<IPatches>{
+		date:'03/06/2019',
+		changes: [
+			"Reduced all novas' radius",
+			"Changed mercs' stats - adjusted price, lvling faster, use only skills in fight",
+			"Increased drop rate of gems",
+			"Amazon's Dodge, Avoid, Evade now have 1 level, reset your skills"
+		],
+		collapsed: true
+	},
+	<IPatches>{
+		date:'03/04/2019',
+		changes: [
+			"Updated system dlls"
+		],
+		collapsed: true
+	},
+	<IPatches>{
+		date:'03/02/2019',
+		changes: [
+			"Robes/cloaks can be runeworded/gemworded",
+			"All runewords/gemwords for melee weapons now have splash damage affix"
+		],
+		collapsed: true
+	},
+	<IPatches>{
+		date:'02/26/2019',
+		changes: [
+			"Glacial Trail and Crystalline Passage swapped",
+			"Added bright colored health bars for monsters",
+			"Valuable items now more visible on ground"
+		],
+		collapsed: true
+	},
+	<IPatches>{
+		date:'02/22/2019',
+		changes: [
+			"Increased drop rate of robes and cloaks",
+			"Added 15 unique robes and cloaks"
+		],
+		collapsed: true
+	},
+	<IPatches>{
+		date:'02/21/2019',
+		changes: [
+			"Added robes and cloaks",
+			"Added armor in gamble",
+			"Added a few more uniques",
+			"Fixed some monster levels (was too high)",
+			"All armor gemwords now emit light"
+		],
+		collapsed: true
+	},
+	<IPatches>{
+		date:'02/12/2019',
+		changes: [
+			"Fixed damage of lightning based skills",
+			"Duriel now has Fanaticism instead of Holy Freeze"
+		],
+		collapsed: true
+	},
+	<IPatches>{
+		date:'02/11/2019',
+		changes: [
+			"Added a description of item type to each set item"
+		],
+		collapsed: true
+	},
+	<IPatches>{
+		date:'01/29/2019',
+		changes: [
+		    "Fixed a crash in Bloody Foothills (act 5)"
+		],
+		collapsed: true
+	},
+	<IPatches>{
+		date:'01/28/2019',
+		changes: [
+			"Better skillers (Grand chamrs with +skills)",
+			"Unique and gems drop tweaks",
+			"All sets buffed"
+		],
+		collapsed: true
+	},
+	<IPatches>{
+		date:'01/25/2019',
+		changes: [
+			"Nova skill now have no synergies.",
+			"Nova skill damage buffed.",
+			"Static Field skill now have only 1 level.",
+			"Increased damage for Teeth, Bone Spear, Bone Spirit, Poison Nova.",
+			"Mercenaries' skills redone",
+			"	Rogue Scout Fire - Dodge, Immolation Arrow, Blessed Aim, Exploding Arrow, Fire Arrow",
+            "	Rogue Scout Ice - Dodge, Freezing Arrow, Blessed Aim, Ice Arrow, Cold Arrow",
+            "	Rogue Scout Combat - Multiple Shot, Penetrate, Blessed Aim, Magic Arrow, Guided Arrow",
+            "	Desert Mercenary Combat - Jab, Prayer, Pole Arm Mastery, Spear Mastery",
+            "	Desert Mercenary Defensive - Jab, Defiance, Pole Arm Mastery, Spear Mastery",
+            "	Desert Mercenary Offensive - Jab, Might, Pole Arm Mastery, Spear Mastery",
+            "	Eastern Sorcerer Fire - Meteor, Fire Ball, Fire Bolt, Hydra, Fire Mastery, Resist Fire",
+            "	Eastern Sorcerer Cold - Glacial Spike, Ice Bolt, Cold Mastery, Frozen Orb, Resist Cold",
+            "	Eastern Sorcerer Lightning - Lightning Mastery, Chain Lightning, Lightning, Charged Bolt, Resist Lightning",
+            "	Eastern Sorcerer Bone - Bone Spear, Bone Spirit, Teeth, Concentration",
+            "	Barbarian - Bash, Concentrate, Battle Cry, Fanaticism, Sword Mastery",
+            "	Barbarian - Bash, Berserk, Battle Cry, Thorns, Sword Mastery",
+		],
+		collapsed: true
+	},
+	<IPatches>{
+		date:'01/24/2019',
+		changes: [
+			"Magic/Rare items' affix changes",
+			"Tiered durability of items",
+			"Fixed some unique items"
+		],
+		collapsed: true
+	},
+	<IPatches>{
+		date:'01/23/2019',
+		changes: [
+			"Fixed invincibility exploit",
+			"Diversified every unique item",
+			"Reworked some full set bonuses'"
+		],
+		collapsed: true
+	},
+	<IPatches>{
+		date:'01/22/2019',
+		changes: [
+			"Fixed some on-hit skills not working for some unique and set items",
+			"Updated gold autoloot and antibug .dlls"
+		],
+		collapsed: true
+	},
+	<IPatches>{
+		date:'01/21/2019',
+		changes: [
+			"Added some missing affixes on items",
+			"Fixed low level act 3 mercenaries",
+			"Better gems quality from monster drops",
+			"Changed gems and some runes",
+			"Increased monsters' skill levels. BEWARE.",
+			"Infinity runeword powered up to confront dark diablo"
+		],
+		collapsed: true
+	},
+    <IPatches>{
+        date:'12/19/2018',
+        changes: [
+			"Rerolling magic and rare charms now require only 2 charms",
+			"Transmuting magic charms to rare now requires only 3 charms",
+			"Adding timeless skills on now increases level requirement by 6",
+			"All types of weapons and armor are upgradeable now"
+        ],
+        collapsed: true
+    },
+    <IPatches>{
+        date:'12/09/2018',
+        changes: [
+			"Better affixes roll for magic and rare items",
+			"Also more +skills on class specific times",
+			"Font was replaced by better readable one"
+        ],
+        collapsed: true
+    },
+    <IPatches>{
+        date:'11/29/2018',
+        changes: [
+			"More techinical modifications, added new dll files"
+        ],
+        collapsed: true
+    },
+    <IPatches>{
+        date:'11/27/2018',
+        changes: [
+            '!!!WARNING!!! Take save folder from MODS->Glory of Nephilim (or MP) and put in safe place, after that delete Glory of Nephilim (or MP) folder. Next update mod as usual.',
+            "Bypass 25 fps limit for single player activated",
+			"Fix for Shadow Master - disappears much less",
+			"Fix for Necromancer revives so they don't wander off",
+			"HyperJoin - fast loading for multiplayer"
+        ],
+        collapsed: true
+    },
+    <IPatches>{
+        date:'11/24/2018',
+        changes: [
+			"Fixed Assassin's traps shots quantity description",
+			"Reduced mana cost for all Assassin's traps",
+			"Reduced radius of Hurricane skill (still whole screen but not wider)"
+        ],
+        collapsed: true
+    },
+    <IPatches>{
+        date:'11/19/2018',
+        changes: [
+			"Restored some of lost unique items' names",
+			"Increased frequency of spawning splash affix on weapons.",
+			"Increased monster level on all difficulties",
+			"Light level changes",
+			"/players X goes to 127 (up from 8)"
+        ],
+        collapsed: true
+    },
+    <IPatches>{
+        date:'11/17/2018',
+        changes: [
+			"Changed some uniques",
+			"HP/mana leech reduced",
+			"Fixed Increased Speed skill"
+        ],
+        collapsed: true
+    },
+    <IPatches>{
+        date:'11/14/2018',
+        changes: [
+            '!!!WARNING!!! Take save folder from MODS->Glory of Nephilim (or MP) and put in safe place, after that delete Glory of Nephilim (or MP) folder. Next update mod as usual.',
+            'Added splash damage affix to magic and rare melee weapons',
+            'Unique and set melee weapons also have it but with 100% chance',
+            'Fixed potion shops',
+            'Max level increased to 125'
+        ],
+        collapsed: true
+    },
+	<IPatches> {
+        date: '11/13/2018',
+        changes: [
+        	"Added auto-pickup gold",
+			"Added \"100% hit change\" feature",
+			"Added \"full protection while running\" feature",
+			"Removed Ancients Level Up Experience Cap",
+			"Removed Experience Penalty beyond 2 screens",
+			"Remove monster lvl/character lvl difference of 10 Experience Penalty",
+			"/nopickup option enabled by default",
+			"Added UVlod title to thanks DevUrandom for coding that stuff"
+        ],
+		collapsed: true
+	},
+	<IPatches> {
+		date: '11/06/2018',
+		changes: [
+			'Removed dodge-type oskills from items to avoid animation glitches. Replace by Iron Skin',
+			'Various length tweaks for some skills (overall damage was not touched)'
+		],
+		collapsed: true
+	},
     <IPatches>{
         date: '10/28/2018',
         changes: [
