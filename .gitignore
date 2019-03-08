@@ -5,7 +5,9 @@
 /tmp
 /out-tsc
 *.zip
-*.prod.ts
+/*.prod.ts
+/*.pyc
+
 
 # dependencies
 /node_modules
