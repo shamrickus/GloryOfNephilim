@@ -1716,7 +1716,7 @@ export const runewords = [
 
         "Properties": [
             "50% Chance To Cast Level 20 Chain Lightning When You Kill An Enemy",
-            "Level 12 Conviction Aura When Equipped",
+            "Level 17 Conviction Aura When Equipped",
             "+35% Faster Run/Walk",
             "+255-325% Enhanced Damage (varies)",
             "-(45-55)% To Enemy Lightning Resistance (varies)",

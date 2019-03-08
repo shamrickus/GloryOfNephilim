@@ -17,6 +17,74 @@ export const PATCHES = [
 	},
 	*/
 	<IPatches>{
+		date:'03/06/2019',
+		changes: [
+			"Reduced all novas' radius",
+			"Changed mercs' stats - adjusted price, lvling faster, use only skills in fight",
+			"Increased drop rate of gems",
+			"Amazon's Dodge, Avoid, Evade now have 1 level, reset your skills"
+		],
+		collapsed: true
+	},
+	<IPatches>{
+		date:'03/04/2019',
+		changes: [
+			"Updated system dlls"
+		],
+		collapsed: true
+	},
+	<IPatches>{
+		date:'03/02/2019',
+		changes: [
+			"Robes/cloaks can be runeworded/gemworded",
+			"All runewords/gemwords for melee weapons now have splash damage affix"
+		],
+		collapsed: true
+	},
+	<IPatches>{
+		date:'02/26/2019',
+		changes: [
+			"Glacial Trail and Crystalline Passage swapped",
+			"Added bright colored health bars for monsters",
+			"Valuable items now more visible on ground"
+		],
+		collapsed: true
+	},
+	<IPatches>{
+		date:'02/22/2019',
+		changes: [
+			"Increased drop rate of robes and cloaks",
+			"Added 15 unique robes and cloaks"
+		],
+		collapsed: true
+	},
+	<IPatches>{
+		date:'02/21/2019',
+		changes: [
+			"Added robes and cloaks",
+			"Added armor in gamble",
+			"Added a few more uniques",
+			"Fixed some monster levels (was too high)",
+			"All armor gemwords now emit light"
+		],
+		collapsed: true
+	},
+	<IPatches>{
+		date:'02/12/2019',
+		changes: [
+			"Fixed damage of lightning based skills",
+			"Duriel now has Fanaticism instead of Holy Freeze"
+		],
+		collapsed: true
+	},
+	<IPatches>{
+		date:'02/11/2019',
+		changes: [
+			"Added a description of item type to each set item"
+		],
+		collapsed: true
+	},
+	<IPatches>{
 		date:'01/29/2019',
 		changes: [
 		    "Fixed a crash in Bloody Foothills (act 5)"
