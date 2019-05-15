@@ -1726,7 +1726,7 @@ export const runewords = [
             "30% Better Chance of Getting Magic Items",
             "Level 21 Cyclone Armor (30 Charges)"
         ],
-        "Type": "Polearms/Spears/Bows"
+        "Type": "Polearms/Spears/Bows/Crossbows/Staffs/Shields"
     },
     {
         "classRestriction": null,
