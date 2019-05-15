@@ -2,9 +2,9 @@ import csv
 import os
 import re
 
-from src.app.data.raw import PropertyParser
-from src.app.data.raw.PropertyParser.property import Property, BaseParser
-from src.app.data.raw.utils import headerParse
+import PropertyParser
+from PropertyParser.property import Property, BaseParser
+from utils import headerParse
 
 
 class Skill(BaseParser):

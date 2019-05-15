@@ -1,11 +1,33 @@
 
+div.advancedToggle {
+  margin: auto;
+  width: 105px;
+
+}
+
+div.advancedColumn {
+  margin: 5px;
+}
+div#advancedSearch {
+  min-height: 200px;
+}
+
+mat-select {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 5px;
+}
+
 table {
   width: 100%;
   min-width: 500px;
-  margin: 16px 0 16px;
+  max-width: 1250px;
+  margin: auto;
   height: 100%;
 
   tr.sticky-footer {
+    max-height: 250px;
+    overflow-y: scroll;
 
     td {
       border-top: 0.5px solid rgba(255, 255, 255, 0.22);
@@ -24,6 +46,11 @@ table {
         }
     }
   }
+}
+div#searchRow {
+  max-height: 260px;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 td.mat-cell:last-child, td.mat-footer-cell:last-child, th.mat-header-cell:last-child {
  padding-right: 0;

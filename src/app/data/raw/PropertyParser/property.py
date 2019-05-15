@@ -2,8 +2,8 @@ import csv
 import urllib.request
 import os
 
-from src.app.data.raw import PropertyParser
-from src.app.data.raw.utils import headerParse
+import PropertyParser
+from utils import headerParse
 
 
 class Property:

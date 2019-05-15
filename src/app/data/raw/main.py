@@ -1,13 +1,13 @@
 import os, csv, re, json
 import sys
 
-from src.app.data.raw import PropertyParser
-from src.app.data.raw.gems import Socketable
-from src.app.data.raw.itemTypes import ItemType
-from src.app.data.raw.skills import Skill
-from src.app.data.raw.runeword import Runeword
-from src.app.data.raw.monstat import MonStat
-from src.app.data.raw.PropertyParser.property import Property, BaseParser, PropertyParse, ParseAggregate
+import PropertyParser
+from gems import Socketable
+from itemTypes import ItemType
+from skills import Skill
+from runeword import Runeword
+from monstat import MonStat
+from PropertyParser.property import Property, BaseParser, PropertyParse, ParseAggregate
 
 
 class Item:

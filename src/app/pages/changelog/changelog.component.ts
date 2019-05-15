@@ -61,14 +61,14 @@ export const CHANGES = <IChange[]> [
 		collapsed: false,
 		name: "Cube",
 		href: "cube",
-		changes: ["All recipes are disabled except for the following","Disenchant (DESTROYS) unique/set/warped/timeless (nonsocketed) item - Any Perfect Gem + item + White Potion = Jewels (Timeless/warped: 3, Set: 2, Unique: 1)","Token of Absolution (reset stats and skills) - transmute key","Aeon's Lesser Blessing - any soul dust + jewel", "Aeon's Greater Blessing - Aeon's Lesser Blessing x4","Aeon's Greater Blessing - 4 different soul dusts + jewel","Secret cow level - Wirt's Leg + Key","Rejuvenation Potion (x3) - Super Healing Potion + Super Mana Potion + Jewel","Full Rejuvenation Potion (x3) - Rejuvenation Potion + Golden Potion","Add replenish quantity to arrows and bolts - Magic or rare arrows or bolts + Key"
+		changes: ["All recipes are disabled except for the following","Disenchant (DESTROYS) unique/set/warped/timeless (nonsocketed) item - Any Perfect Gem + item + White Potion = Jewels (Timeless/warped: 3, Set: 2, Unique: 1)","Token of Absolution (reset stats and skills) - transmute key","Aeon's Lesser Blessing - any soul dust + Jewel", "Aeon's Greater Blessing - Aeon's Lesser Blessing x4","Aeon's Greater Blessing - 4 different soul dusts + Jewel","Secret cow level - Wirt's Leg + Key","Rejuvenation Potion (x3) - Super Healing Potion + Super Mana Potion + Jewel","Full Rejuvenation Potion (x3) - Rejuvenation Potion + Golden Potion","Add replenish quantity to arrows and bolts - Magic or rare arrows or bolts + Key"
 		],
 		subCat: [
 			<IChange>{
 				collapsed: false,
 				name:"Gem and Runes",
 				href:"gr",
-				changes:["5 same runes - 1 rune of higher quality","3 same gems - 1 gem of higher quality","Downgrade gems (or runes) into smaller - 1 gem (or rune) + White Potion","Any Perfect Gem x3 + Jewel + Chipped Ruby = Perfect Ruby x3","Any Perfect Gem x3 + Jewel + Chipped Diamod = Perfect Diamond x3","Any Perfect Gem x3 + Jewel + Chipped Saphire = Perfect Saphire x3","Any Perfect Gem x3 + Jewel + Chipped Topaz = Perfect Topaz x3","Any Perfect Gem x3 + Jewel + Chipped Emerald = Perfect Emerald x3","Any Perfect Gem x3 + Jewel + Chipped Amethyst = Perfect Amethyst x3","Any Perfect Gem x3 + Jewel + Chipped Skull = Perfect Skull x3"
+				changes:["3 same runes - 1 rune of higher quality","3 same gems - 1 gem of higher quality","Downgrade gems (or runes) into smaller - 1 gem (or rune) + White Potion","Any Perfect Gem x3 + Jewel + Chipped Ruby = Perfect Ruby x3","Any Perfect Gem x3 + Jewel + Chipped Diamod = Perfect Diamond x3","Any Perfect Gem x3 + Jewel + Chipped Saphire = Perfect Saphire x3","Any Perfect Gem x3 + Jewel + Chipped Topaz = Perfect Topaz x3","Any Perfect Gem x3 + Jewel + Chipped Emerald = Perfect Emerald x3","Any Perfect Gem x3 + Jewel + Chipped Amethyst = Perfect Amethyst x3","Any Perfect Gem x3 + Jewel + Chipped Skull = Perfect Skull x3"
 				]
 			},
 			<IChange>{
@@ -79,16 +79,16 @@ export const CHANGES = <IChange[]> [
 			},
 			<IChange>{
 				collapsed: false,
-				name: "Warped items (set/unique rings/amultes)",
+				name: "Warped item",
 				href:"warped",
-				changes: ["Make item warped - item + Any Perfect Gem x3 + Jewel x3 + Golden Potion", "Cold resist +4% (+1 level req) - warped item + blank runestone + jewel + Perfect Saphire","Fire resist +4% (+1 level req) - warped item + blank runestone + jewel + Perfect Ruby","Lightning resist +4% (+1 level req) - warped item + blank runestone + jewel + Perfect Topaz","Poison resist +4% (+1 level req) - warped item + blank runestone + jewel + Perfect Emerald","Cold pierce +2% (+3 level req) - warped item + blank runestone x2 + jewel + Perfect Saphire","Fire pierce +2% (+3 level req) - warped item + blank runestone x2 + jewel + Perfect Ruby","Lightning pierce +2% (+3 level req) - warped item + blank runestone x2 + jewel + Perfect Topaz","Poison pierce +2% (+3 level req) - warped item + blank runestone x2 + jewel + Perfect Emerald","Life +4% and mana +2% steal (+1 level req) - warped item + blank runestone + jewel + Perfect Skull","Physic damage min and max +5 (+1 level req) - warped item + blank runestone + jewel + Perfect Amethyst","Magic damage +5 (+1 level req) - warped item + blank runestone + jewel + Perfect Diamond","Damage to undead and demons +4% (+1 level req) - warped item + blank runestone + jewel + Pul Rune","Health +10 and mana +5 (+1 level req) - warped item + blank runestone + jewel + Full Rejuvenation Potion (MEGA)","Magic find +4% and gold find +6% (+1 level req) - warped item + blank runestone + jewel + Lem Rune","Additional expirience +2% (+2 level req) - warped item + blank runestone + jewel + Um Rune","Level req reduce (-50 level req) - warped item + blank runestone + jewel + Zod Rune",
+				changes: ["Make item warped - Unique/set ring/amulet + Any Perfect Gem x3 + Jewel x3 + Golden Potion", "Cold resist +4% (+1 level req) - warped item + blank runestone + Jewel + Perfect Saphire","Fire resist +4% (+1 level req) - warped item + blank runestone + Jewel + Perfect Ruby","Lightning resist +4% (+1 level req) - warped item + blank runestone + Jewel + Perfect Topaz","Poison resist +4% (+1 level req) - warped item + blank runestone + Jewel + Perfect Emerald","Cold pierce +2% (+3 level req) - warped item + blank runestone x2 + Jewel + Perfect Saphire","Fire pierce +2% (+3 level req) - warped item + blank runestone x2 + Jewel + Perfect Ruby","Lightning pierce +2% (+3 level req) - warped item + blank runestone x2 + Jewel + Perfect Topaz","Poison pierce +2% (+3 level req) - warped item + blank runestone x2 + Jewel + Perfect Emerald","Life +4% and mana +2% steal (+1 level req) - warped item + blank runestone + Jewel + Perfect Skull","Physic damage min and max +5 (+1 level req) - warped item + blank runestone + Jewel + Perfect Amethyst","Magic damage +5 (+1 level req) - warped item + blank runestone + Jewel + Perfect Diamond","Damage to undead and demons +4% (+1 level req) - warped item + blank runestone + Jewel + Pul Rune","Health +10 and mana +5 (+1 level req) - warped item + blank runestone + Jewel + Full Rejuvenation Potion (MEGA)","Magic find +4% and gold find +6% (+1 level req) - warped item + blank runestone + Jewel + Lem Rune","Additional expirience +2% (+2 level req) - warped item + blank runestone + Jewel + Um Rune","Level req reduce (-50 level req) - warped item + blank runestone + Jewel + Zod Rune",
 				]
 			},
 			<IChange> {
 				name:"Timeless Item",
 				href:"timeless",
-				changes: ["Looped Time Fragment - Warped Rune x3 + Golden Potion","Make item Timeless - Superior nonsocketed gloves or boots + Looped Time Fragment + Jewel","Add skill on Timeless item (+3 lvl req) - Timeless item + Perfect Gem (depends on class) + Jewel x3 + Key x? (depends on skill) + Looped Time Fragment",
-					"Class only skills limit to 7, oskills limited only by your level. Oskills for native classes will be reduced to 3. Skill properties increase level requirements by 6"
+				changes: ["Looped Time Fragment - Warped Rune x3 + Golden Potion","Make item Timeless - Unique/set nonsocketed gloves or boots + Looped Time Fragment + Jewel","Add skill on Timeless item (+3 lvl req) - Timeless item + Perfect Gem (depends on class) + Jewel x3 + Key x? (depends on skill) + Looped Time Fragment",
+					"Class only skills limit to 7, oskills limited only by your level. oskills for native classes will be reduced to 3. Skill properties increase level requirements by 6"
 				],
 				subCat: [
 					<IChange>{

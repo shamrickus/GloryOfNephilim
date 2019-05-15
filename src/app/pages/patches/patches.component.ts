@@ -17,6 +17,100 @@ export const PATCHES = [
 	},
 	*/
 	<IPatches>{
+		date:'04/21/2019',
+		changes: [
+			"Updated dlls"
+		],
+		collapsed: true
+	},
+	<IPatches>{
+		date:'04/13/2019',
+		changes: [
+			"Fixed Skull Collector staff appearance",
+			"Unique charms and gems no long have lvl re1quirements"
+		],
+		collapsed: true
+	},
+	<IPatches>{
+		date:'04/09/2019',
+		changes: [
+			"Updated dlls",
+			"Ctrl Left Click Item extened to Inventory, Stash, Cube & Ground Drop",
+			"Shift Left Click belt-able item extended to Stash & Cube",
+			"Increased drop rate of uber keys",
+			"Increased effectiveness of Corpse Explosion",
+			"Greatly increased quality of rune drop rate"
+		],
+		collapsed: true
+	},
+	<IPatches>{
+		date:'04/04/2019',
+		changes: [
+			"Sorceress' elemental masteries level requirement now = 1"
+		],
+		collapsed: true
+	},
+	<IPatches>{
+		date:'04/02/2019',
+		changes: [
+			"IMPORTANT: Backup save folder and delete mod's folder. Update and drop save folder back in mod",
+			"Raised level of Nephilim Hunters on Normal",
+			"Reduced Nephilim Hunters power, adjusted drop rates",
+			"Uber Quest is now active",
+			"Added shift+click functionality to put items in stash, cube, inventory",
+			"5->3 runes required to upgrade"
+		],
+		collapsed: true
+	},
+	<IPatches>{
+		date:'03/30/2019',
+		changes: [
+			"Added some unique items",
+			"Reduced paladin's Vengeance skill mana cost",
+			"Infinity can be assembled in polearms, spears, bows, crossbows, staffs, sheidls",
+			"Added Nephilim Hunters in nonquest areas. Be careful",
+			"All unique robes and cloaks now have a specific place of drop in addition to usual random drop",
+			"Fixed some monsters spawns",
+			"Added Frost Nova to act 3 merc",
+			"Jameela shared her potions with Halbu",
+			"Added FAQ in the archive"
+		],
+		collapsed: true
+	},
+	<IPatches>{
+		date:'03/27/2019',
+		changes: [
+			"Reduced some amazon skills mana requirements",
+			"Increased brightness in caves"
+		],
+		collapsed: true
+	},
+	<IPatches>{
+		date:'03/23/2019',
+		changes: [
+			"Changed recipe of making time items - set/unique boots/gloves now replace superior",
+			"Adjusted drop rate for some armor types",
+			"Minor miscellaneous adjustments",
+			"Updated system dlls"
+		],
+		collapsed: true
+	},
+	<IPatches>{
+		date:'03/17/2019',
+		changes: [
+			"Increased monsters' density in non-quest areas",
+			"New font moved to separate archive"
+		],
+		collapsed: true
+	},
+	<IPatches>{
+		date:'03/11/2019',
+		changes: [
+			"Added full equipment for mercenaries (background has some work left to be done)"
+		],
+		collapsed: true
+	},
+	<IPatches>{
 		date:'03/06/2019',
 		changes: [
 			"Reduced all novas' radius",
