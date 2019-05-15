@@ -48,6 +48,14 @@ export class ArmoryService implements OnInit {
         this.change.emit(this.items);
     }
 
+    getRuneNames() : string[] {
+        let ret = [];
+        for(let rune of this.runes) {
+            ret.push(rune.Name);
+        }
+        return ret;
+    }
+
     loadRunes(runes: Rune[]) {
         this.runes = runes;
     }
