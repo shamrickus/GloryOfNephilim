@@ -8,9 +8,8 @@ def isdebugging():
       return True
   return False
 
-from src.app.data.raw import PropertyParser
-from src.app.data.raw import skills
-from src.app.data.raw.PropertyParser.property import Property, BaseParser
+import skills, PropertyParser
+from PropertyParser.property import Property, BaseParser
 
 
 class Runeword(BaseParser):

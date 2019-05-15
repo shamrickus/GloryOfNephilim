@@ -2,8 +2,8 @@ import csv
 import os
 import re
 
-from src.app.data.raw import PropertyParser
-from src.app.data.raw.PropertyParser.property import Property, BaseParser
+import PropertyParser
+from PropertyParser.property import Property, BaseParser
 
 _slots = ["Weapon", "Armor", "Shield"]
 class Socketable(BaseParser):

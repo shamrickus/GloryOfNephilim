@@ -1,8 +1,8 @@
 import csv
 import os
 
-from src.app.data.raw import PropertyParser
-from src.app.data.raw.PropertyParser.property import Property, BaseParser
+import PropertyParser
+from PropertyParser.property import Property, BaseParser
 
 
 class ItemType(BaseParser):

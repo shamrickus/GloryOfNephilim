@@ -1,4 +1,4 @@
-from src.app.data.raw.PropertyParser.property import BaseParser
+from PropertyParser.property import BaseParser
 
 
 class MonStat(BaseParser):
