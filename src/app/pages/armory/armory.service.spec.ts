@@ -35,7 +35,7 @@ describe('ArmoryService', () => {
             for (let i = 0; i < 3; ++i) {
                 let item = createRune();
                 item.Name = i == 0 ? "B" : i == 1 ? "A" : "C";
-                item.Runes = [runes[0].Name];
+                item.Runes = [runes[0].name];
                 runewords.push(item);
             }
             let sort = <Sort>{
