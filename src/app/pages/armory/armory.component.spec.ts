@@ -9,6 +9,7 @@ import {GonCardComponent} from "../../gon-card/gon-card.component";
 import {SidebarComponent} from "../../sidebar/sidebar.component";
 import {ToTopComponent} from "../../to-top/to-top.component";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import {FormsModule} from "@angular/forms";
 
 describe('ArmoryComponent', () => {
   let component: ArmoryComponent;
@@ -20,6 +21,7 @@ imports: [
         RouterTestingModule,
         BrowserAnimationsModule,
         MaterialModule,
+		FormsModule
       ],
       declarations: [
           ArmoryComponent,
