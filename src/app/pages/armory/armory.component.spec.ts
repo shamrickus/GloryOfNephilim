@@ -10,6 +10,7 @@ import {SidebarComponent} from "../../sidebar/sidebar.component";
 import {ToTopComponent} from "../../to-top/to-top.component";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {FormsModule} from "@angular/forms";
+import 'hammerjs';
 
 describe('ArmoryComponent', () => {
   let component: ArmoryComponent;
