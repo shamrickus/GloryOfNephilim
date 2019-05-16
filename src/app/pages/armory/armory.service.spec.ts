@@ -3,7 +3,7 @@ import {inject, TestBed} from '@angular/core/testing';
 import {ArmoryService, IItem, IRuneWord, ISocketable, nameof, Rune, SortItems} from './armory.service';
 import {Sort} from "@angular/material";
 import {runes as runes} from "../../data/runes";
-import {Duplicate, DuplicateTyped} from "../../app.factory";
+import {Duplicate} from "../../app.factory";
 import {run} from "tslint/lib/runner";
 
 function createRuneWord() {
