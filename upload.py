@@ -38,7 +38,7 @@ with open(pathToEnv, 'r') as file:
 
 
 cnopts = pysftp.CnOpts()
-if keydata is None:
+if keydata is not None:
     key = paramiko.RSAKey(data=decodebytes(keydata))
     cnopts.hostkeys.add(srv, 'ssh-rsa', key)
 else:
