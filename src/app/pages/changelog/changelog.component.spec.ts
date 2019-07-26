@@ -5,7 +5,7 @@ import {GonButtonComponent} from "../../gon-button/gon-button.component";
 import {RouterTestingModule} from "@angular/router/testing";
 import {GonCardComponent} from "../../gon-card/gon-card.component";
 import {MaterialModule} from "../../app.material";
-import {MatIconModule} from "@angular/material";
+import { MatIconModule } from "@angular/material/icon";
 import {HeaderComponent} from "./header/header.component";
 import {ChangeComponent} from "./change/change.component";
 

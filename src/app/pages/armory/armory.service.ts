@@ -1,5 +1,5 @@
 import {EventEmitter, Injectable, OnInit, Output} from '@angular/core';
-import {Sort} from "@angular/material";
+import { Sort } from "@angular/material/sort";
 import {nameofFactory} from "../../app.factory";
 import {runewords} from "../../data/runewords";
 import {runes} from "../../data/runes";
