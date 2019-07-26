@@ -17,6 +17,23 @@ export const PATCHES = [
 	},
 	*/
 	<IPatches>{
+		date:'07/19/2019',
+		changes: [
+			"Fixed some issues with gambling",
+			"Default font updated"
+		],
+		collapsed: true
+	},
+	<IPatches>{
+		date:'07/07/2019',
+		changes: [
+			"Updated dlls",
+			"Added gamble refresh button",
+			"Magic find is now linear, previously was affected by dimensioning return"
+		],
+		collapsed: true
+	},
+	<IPatches>{
 		date:'04/21/2019',
 		changes: [
 			"Updated dlls"

@@ -1,6 +1,6 @@
 from base64 import decodebytes
 from subprocess import call
-import paramiko
+import paramiko, logging
 import pysftp, sys, os, zipfile
 
 print("Building")
@@ -16,9 +16,11 @@ def zip(src, dst):
     zf.close()
 print("Zipping")
 zip('dist', 'dist')
+logging.basicConfig(filename="./log.txt", level=logging.DEBUG)
 
 pathToEnv='src/environments/environment.prod.ts'
 zipFile = "dist.zip"
+keydata = None
 with open(pathToEnv, 'r') as file:
    for line in file.readlines():
       line = line.strip()
@@ -34,11 +36,13 @@ with open(pathToEnv, 'r') as file:
           elif(tokens[0] == 'key'):
              keydata = bytes(tokens[1], 'utf-8')
 
-print(srv, usr, pw,keydata)
 
-key = paramiko.RSAKey(data=decodebytes(keydata))
 cnopts = pysftp.CnOpts()
-cnopts.hostkeys.add(srv, 'ssh-rsa', key)
+if keydata is not None:
+    key = paramiko.RSAKey(data=decodebytes(keydata))
+    cnopts.hostkeys.add(srv, 'ssh-rsa', key)
+else:
+    cnopts.hostkeys = None
 
 print("Uploading dist")
 with  pysftp.Connection(host=srv, username=usr,password=pw, cnopts=cnopts) as sftp:
