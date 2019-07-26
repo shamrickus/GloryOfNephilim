@@ -1,6 +1,7 @@
 import {ChangeDetectorRef, Component, OnInit} from '@angular/core';
 import {ArmoryService, IItem, IProperty, ISocketable, Socketable, SortItems} from "./armory.service";
-import {MatTableDataSource, Sort} from "@angular/material";
+import { Sort } from "@angular/material/sort";
+import { MatTableDataSource } from "@angular/material/table";
 import {operators} from "rxjs/internal/Rx";
 import {FormControl} from "@angular/forms";
 
