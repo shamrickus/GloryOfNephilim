@@ -10,7 +10,7 @@
     "servertest": "./node_modules/.bin/ng test --watch=false --browsers ChromeHeadlessDangerous --reporters=teamcity",
     "lint": "./node_modules/.bin/ng lint",
     "e2e": "./node_modules/.bin/ng e2e",
-    "audit": "./node_modules/.bin/npm-audit-ci --moderate"
+    "audit": "npm audit --json|npm-audit-reporter-teamcity"
   },
   "private": true,
   "dependencies": {
@@ -47,7 +47,7 @@
     "karma-cli": "~1.0.1",
     "karma-jasmine": "~1.1.0",
     "karma-teamcity-reporter": "^1.1.0",
-    "npm-audit-ci": "^1.2.0",
+    "npm-audit-reporter-teamcity": "^0.2.3",
     "protractor": "^5.4.2",
     "puppeteer": "^1.15.0",
     "ts-node": "~3.2.0",
