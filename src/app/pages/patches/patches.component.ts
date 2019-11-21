@@ -17,6 +17,13 @@ export const PATCHES = [
 	},
 	*/
 	<IPatches>{
+		date:'11/20/2019',
+		changes: [
+			"Fixed Mercenary's inventory background to only have one slot for ring (visual change)"
+		],
+		collapsed: true
+	},
+	<IPatches>{
 		date:'07/19/2019',
 		changes: [
 			"Fixed some issues with gambling",
