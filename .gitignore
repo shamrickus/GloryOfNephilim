@@ -60,3 +60,4 @@ public/source/**/*.css
 *.js
 app/config/*
 log.txt
+src/environments/environment.prod.ts
