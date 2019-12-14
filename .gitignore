@@ -59,3 +59,4 @@ public/source/**/*.css
 
 *.js
 app/config/*
+log.txt
