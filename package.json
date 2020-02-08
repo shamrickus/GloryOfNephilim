@@ -10,7 +10,8 @@
     "servertest": "./node_modules/.bin/ng test --watch=false --browsers ChromeHeadlessDangerous --reporters=teamcity",
     "lint": "./node_modules/.bin/ng lint",
     "e2e": "./node_modules/.bin/ng e2e",
-    "audit": "npm audit --json|npm-audit-reporter-teamcity"
+    "audit": "npm audit --json|npm-audit-reporter-teamcity",
+    "postinstall": "ngcc --properties es2015 browser module main --first-only --create-ivy-entry-points"
   },
   "private": true,
   "dependencies": {

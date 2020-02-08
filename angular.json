@@ -131,9 +131,23 @@
   "schematics": {
     "@schematics/angular:component": {
       "prefix": "app",
-      "styleext": "scss"
+      "styleext": "scss",
+      "lintFix": true
+    },
+    "@schematics/angular:class": {
+      "lintFix": true
+    },
+    "@schematics/angular:module": {
+      "lintFix": true
+    },
+    "@schematics/angular:pipe": {
+      "lintFix": true
+    },
+    "@schematics/angular:service": {
+      "lintFix": true
     },
     "@schematics/angular:directive": {
+      "lintFix": true,
       "prefix": "app"
     }
   }
