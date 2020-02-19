@@ -1,14 +1,16 @@
 <div fxLayout="column" fxFlex="grow">
     <div fxLayout="row" class="headerRow">
         <div fxLayout="column" id="logoContainer">
-            <img id="logo" src="../assets/images/logo.gif" />
+            <video width="276" height="120" loop autoplay="autoplay" playsinline>
+                <source src="../assets/images/logo.webm" type="video/webm">
+            </video>
             <div>Glory of Nephilim</div>
         </div>
         <div fxFlex="grow" id="headerSpacer"></div>
         <div fxLayout="column" id="quickLinks">
             <span class="lastUpdated">Last Updated: {{GetLastUpdate()}}</span>
             <div fxLayout="row">
-                <mat-slide-toggle (change)="fancyText = !fancyText"></mat-slide-toggle>
+                <mat-slide-toggle (change)="fancyText = !fancyText" label="Authentic Font"></mat-slide-toggle>
                 <gon-button [pop]="true" [button]="downloadButton"></gon-button>
             </div>
         </div>

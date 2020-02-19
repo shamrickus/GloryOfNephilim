@@ -35,11 +35,6 @@ body {
   background: url(#{$imagesPath}/bg.jpg);
 }
 
-@font-face {
-  font-family: diablo;
-  src: url(#{$fontsPath}/diablo.ttf);
-}
-
 hr {
   border: 0;
   height: 1px;
