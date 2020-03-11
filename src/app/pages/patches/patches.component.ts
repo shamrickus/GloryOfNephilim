@@ -9,13 +9,29 @@ export interface IPatches {
 export const PATCHES = [
 	/*
 	<IPatches>{
-		date:'dd/mm/2019',
+		date:'dd/mm/2020',
 		changes: [
 
 		],
 		collapsed: true
 	},
 	*/
+	<IPatches>{
+		date:'10/03/2020',
+		changes: [
+			"Fixed a problem with \"always magic class only items\"",
+			"Removed gem from normalization recipe"
+		],
+		collapsed: true
+	},
+	<IPatches>{
+		date:'09/03/2020',
+		changes: [
+			"Fixed a problem with \"always magic belts, boots and gloves\"",
+			"Added a normalization recipe -> Any equip (magic or higher) + id scroll = Normal equip + Gem"
+		],
+		collapsed: true
+	},
 	<IPatches>{
 		date:'11/20/2019',
 		changes: [
@@ -604,7 +620,7 @@ export const PATCHES = [
 	},
 	<IPatches>{
 		date: "Feburary 27th, 2017",
-		changes: [
+	changes: [
 			"Paladin's resistance auras skills nerfed. (Because global resistances penalty was reduced)",
 			"Crafted items recipes turned off because nobody uses them. Maybe I will redo them later",
 			"Forsworn sword now have not so bad stats as before",
