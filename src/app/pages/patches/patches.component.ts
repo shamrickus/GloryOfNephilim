@@ -17,6 +17,13 @@ export const PATCHES = [
 	},
 	*/
 	<IPatches>{
+		date:'06/04/2020',
+		changes: [
+			"Fixed incorrect strings on runewords"
+		],
+		collapsed: true
+	},
+	<IPatches>{
 		date:'10/03/2020',
 		changes: [
 			"Fixed a problem with \"always magic class only items\"",
