@@ -4,7 +4,7 @@ import paramiko, logging
 import pysftp, sys, os, zipfile
 
 print("Building")
-call(['.\\node_modules\\.bin\\ng.cmd', 'build', '--prod'])
+call([os.path.join('.', 'node_modules', '.bin', 'ng'), 'build', '--prod'])
 def zip(src, dst):
     zf = zipfile.ZipFile("%s.zip" % (dst), "w", zipfile.ZIP_DEFLATED)
     abs_src = os.path.abspath(src)
