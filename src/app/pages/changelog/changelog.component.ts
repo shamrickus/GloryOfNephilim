@@ -123,7 +123,7 @@ export const CHANGES = <IChange[]> [
 						collapsed: false,
 						name: "Barbarian - Ruby",
 						href: "Barbarian",
-						changes: ["<1 Bash","2 Sword Mastery","3 Axe Mastery","4 Mace Mastery","5 Howl","6 Find Potion","7 Leap","8 Double Swing","9 Pole Arm Mastery","10 Throwing Mastery","11 Spear Mastery","12 Taunt","13 Shout","14 Stun","15 Double Throw","16 Increased Stamina","17 Find Item","18 Leap Attack","19 Concentrate","20 Iron Skin","21 Battle Cry","22 Frenzy","23 Increased Speed","24 Battle Orders","25 Grim Ward","26 Whirlwind","27 Berserk","28 Natural Resistance","29 War Cry","30 Battle Command"
+						changes: ["1 Bash","2 Sword Mastery","3 Axe Mastery","4 Mace Mastery","5 Howl","6 Find Potion","7 Leap","8 Double Swing","9 Pole Arm Mastery","10 Throwing Mastery","11 Spear Mastery","12 Taunt","13 Shout","14 Stun","15 Double Throw","16 Increased Stamina","17 Find Item","18 Leap Attack","19 Concentrate","20 Iron Skin","21 Battle Cry","22 Frenzy","23 Increased Speed","24 Battle Orders","25 Grim Ward","26 Whirlwind","27 Berserk","28 Natural Resistance","29 War Cry","30 Battle Command"
 						]
 					},
 					<IChange>{
