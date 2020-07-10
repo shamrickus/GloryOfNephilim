@@ -17,6 +17,14 @@ export const PATCHES = [
 	},
 	*/
 	<IPatches>{
+		date:'07/10/2020',
+		changes: [
+			"Reduced all mobs resistances on nightmare and hell difficulties",
+			"Changed some stats on gems"
+		],
+		collapsed: true
+	},
+	<IPatches>{
 		date:'06/04/2020',
 		changes: [
 			"Fixed incorrect strings on runewords"
