@@ -149,5 +149,8 @@
       "lintFix": true,
       "prefix": "app"
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }
