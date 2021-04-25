@@ -2,20 +2,91 @@ import {Component, OnInit} from '@angular/core';
 
 export interface IPatches {
 	date: string;
+	//parseDate: Date;
 	changes: string[];
 	collapsed: boolean;
 }
 
-export const PATCHES = [
+
+export let PATCHES = [
 	/*
 	<IPatches>{
-		date:'dd/mm/2020',
+		date:'dd/mm/2021',
 		changes: [
 
 		],
 		collapsed: true
 	},
 	*/
+	<IPatches>{
+		date:'02/18/2021',
+		changes: [
+			"Elemental masteries are slightly weakened, as there are affixes on items for piercing resistances",
+			"Reduced cooldown of some skills",
+			"Weakened the efficiency of energy shield by 20%",
+			"Succubi in Act 5 now use Amplify Damage over Baal's Curse",
+			"Stygian fetishes should be less fatal",
+			"Nephilim hunters have become weaker and slower",
+			"Chances of using mercenary skills have been changed",
+			"Improved Act 5 mercenary",
+			"Skill charges of non-unique items are replace by oskills"
+		],
+		collapsed: true
+	},
+	<IPatches>{
+		date:'02/17/2021',
+		changes: [
+			"Changed distribution for all affixes - now they all have a level req less than 70"
+		],
+		collapsed: true
+	},
+	<IPatches>{
+		date:'02/16/2021',
+		changes: [
+			"Smoother transition between difficulty levels",
+			"Changed the illumination colors of hard locations, they now have a red aura",
+			"Greatly reduced the chance of junk dropping from bosses",
+			"Improved the quality of the dropped runes",
+			"Removed nephilim hunters from places where they shouldn't be"
+		],
+		collapsed: true
+	},
+	<IPatches>{
+		date:'02/15/2021',
+		changes: [
+			"Added new elemental and mana affixes for all items",
+			"Reduced the duration of poison on weapons (damage inflicted remains the same)"
+		],
+		collapsed: true
+	},
+	<IPatches>{
+		date:'01/07/2021',
+		changes: [
+			"Updated PlugY version",
+			"Removed multiplayer version of mod - new version of PlugY handles MP correctly now",
+			"Fixed merc ring slot",
+			"Added piercing for immune mobs, have 99% resistance",
+			"Changed UberQuest to be more like vanilla, Nephilim Hunters removed - bosses willl summ their minions"
+		],
+		collapsed: true
+	},
+	<IPatches>{
+		date:'01/05/2021',
+		changes: [
+			"Increase manacost for Energy Shield",
+			"Change sets: Tal Rasha, Trang'Oul, Falsum, Sanders, Disciple, Heaven's Brethren, Orphan's Call",
+			"Added 3 unique crystal swords"
+		],
+		collapsed: true
+	},
+	<IPatches>{
+		date:'01/03/2021',
+		changes: [
+			"Act 1 hirelings can now equip crossbows and amazon bows",
+			"Fixed some .dll file issues"
+		],
+		collapsed: true
+	},
 	<IPatches>{
 		date:'07/10/2020',
 		changes: [
