@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { ChangelogComponent } from './changelog.component';
 import {GonButtonComponent} from "../../gon-button/gon-button.component";
@@ -13,7 +13,7 @@ describe('ChangelogComponent', () => {
   let component: ChangelogComponent;
   let fixture: ComponentFixture<ChangelogComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
         imports: [
             MaterialModule,

@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { ToTopComponent } from './to-top.component';
 import {MaterialModule} from "../app.material";
@@ -8,7 +8,7 @@ describe('ToTopComponent', () => {
   let component: ToTopComponent;
   let fixture: ComponentFixture<ToTopComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
         imports: [MaterialModule, RouterTestingModule],
       declarations: [ ToTopComponent ]
