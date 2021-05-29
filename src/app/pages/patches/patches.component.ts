@@ -19,6 +19,13 @@ export let PATCHES = [
 	},
 	*/
 	<IPatches>{
+		date:'05/29/2021',
+		changes: [
+			"Fixed an issue with Wind (runeword) having incorrect stats"
+		],
+		collapsed: true
+	},
+	<IPatches>{
 		date:'02/18/2021',
 		changes: [
 			"Elemental masteries are slightly weakened, as there are affixes on items for piercing resistances",
