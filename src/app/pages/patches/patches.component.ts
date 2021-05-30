@@ -19,9 +19,9 @@ export let PATCHES = [
 	},
 	*/
 	<IPatches>{
-		date:'05/29/2021',
+		date:'05/30/2021',
 		changes: [
-			"Fixed an issue with Wind (runeword) having incorrect stats"
+			"Fixed an issue with Wind and Wind Fury having incorrect stats",
 		],
 		collapsed: true
 	},
