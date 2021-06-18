@@ -19,6 +19,13 @@ export let PATCHES = [
 	},
 	*/
 	<IPatches>{
+		date:'06/15/2021',
+		changes: [
+			"Fixed game slowdown at the beginning of the game session for some PCs"
+		],
+		collapsed: true
+	},
+	<IPatches>{
 		date:'05/30/2021',
 		changes: [
 			"Fixed an issue with Wind and Wind Fury having incorrect stats",
