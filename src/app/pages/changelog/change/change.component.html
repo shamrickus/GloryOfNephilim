@@ -1,0 +1,13 @@
+<h3 id="{{change.href}}" (click)="change.collapsed = !change.collapsed">
+    <mat-icon *ngIf="change.collapsed" class="noselect">keyboard_arrow_right</mat-icon>
+    <mat-icon *ngIf="!change.collapsed" class="noselect">keyboard_arrow_down</mat-icon>
+    <span class="noselect">{{change.name}}</span>
+</h3>
+<div *ngIf="!change.collapsed">
+    <ul>
+        <li *ngFor="let chg of change.changes">{{chg}}</li>
+        <div *ngFor="let sub of change.subCat">
+            <app-change [change]="sub"></app-change>
+        </div>
+    </ul>
+</div>

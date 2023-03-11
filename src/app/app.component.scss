@@ -1,0 +1,98 @@
+$fontsPath: "../assets/font";
+$imagesPath: "../assets/images";
+
+ gon-home, gon-card {
+  width: 100%;
+  margin: 0 15px 100px 5px;
+}
+
+gon-card.diablo {
+  font-family: diablo, serif;
+}
+
+div#quickLinks{
+  min-width: 300px;
+}
+div#headerSpacer {
+  min-width: 199px;
+}
+
+gon-card.normal {
+  font-family: Arial, Helvetica, SansSerif !important;
+}
+
+gon-footer {
+  min-width: 640px;
+  width: 100%;
+  z-index:5;
+}
+
+.headerRow {
+  min-height: 157px;
+  margin-bottom: 25px;
+}
+
+.legText {
+  color: #E3CB87;
+}
+
+.gemText {
+  color: #C000FF;
+}
+
+
+.link {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+div {
+  .lastUpdated, .mat-slide-toggle-content {
+    font-size: 20px;
+    color: white;
+    margin: 25px 15px 10px 0;
+  }
+  gon-button {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+h3 {
+  margin-bottom: 5px;
+}
+
+h4 {
+  margin-bottom: 3.5px;
+}
+
+#logo, #logoContainer {
+  width: 276px;
+
+  div {
+    font-size:30px;
+    text-shadow: 0 0 1px rgba(255,255, 255, 1), 0 0 6px red, 0 0 8px red;
+    text-align:center;
+    color: orange;
+  }
+}
+
+#logo {
+  height: 120px;
+}
+
+#bodyContainer {
+  position: relative;
+
+  #mainContent {
+    margin-left: 125px;
+  }
+
+  #sideMenu {
+    position: fixed;
+  }
+
+  margin-bottom: 75px;
+
+}

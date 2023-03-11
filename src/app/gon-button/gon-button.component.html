@@ -1,0 +1,7 @@
+<div (click)="onClick()" class="gonButton {{getClass()}} noselect">
+    <img src="../../assets/images/button/blank_button.png" *ngIf="!getActive()" alt="button"/>
+    <img src="../../assets/images/button/blank_button_active.png" *ngIf="getActive()" alt="button_pressed"/>
+    <div class="{{getClass()}}">
+        {{getText()}}
+    </div>
+</div>

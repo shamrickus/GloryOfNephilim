@@ -1,0 +1,49 @@
+$width: 110px;
+div {
+  width: $width;
+  mat-card.gonMenu {
+    position: fixed;
+    margin-left: -1px;
+    width: $width;
+    padding: 0;
+    display: inline-block;
+    font-family: diablo, serif;
+    background-image:url("../../assets/images/menu/menuBackground.png");
+
+    div.content {
+      margin: auto auto auto 5px;
+      width: 100px;
+
+      div.menuSpacer {
+        height: 7px;
+        width:100%;
+      }
+      div.menuSpacer-2 {
+        height: 10px;
+        width: 100%;
+      }
+    }
+    div.header, div.footer {
+      margin-left: 0;
+    }
+
+    div.header {
+      height: 14px;
+      width: 110px;
+      background: url("../../assets/images/menu/menuHeader.png");
+    }
+
+    div.footer {
+      width: 109px;
+      height: 13px;
+      background: url("../../assets/images/menu/menuFooter.png");
+    }
+  }
+  #toggle {
+    position: fixed;
+    left: 5px;
+    top: 460px;
+    width: 50px;
+    background: white;
+  }
+}

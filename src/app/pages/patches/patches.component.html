@@ -1,0 +1,11 @@
+<h1>Changes</h1>
+<ul *ngFor="let patch of patches">
+    <div layout="row" (click)="patch.collapsed = !patch.collapsed">
+        <mat-icon *ngIf="patch.collapsed" class="noselect">keyboard_arrow_right</mat-icon>
+        <mat-icon *ngIf="!patch.collapsed" class="noselect">keyboard_arrow_down</mat-icon>
+        <b class="noselect">{{patch.date}}</b>
+    </div>
+    <div *ngIf="!patch.collapsed">
+        <li *ngFor="let change of patch.changes">{{change}}</li>
+    </div>
+</ul>

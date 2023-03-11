@@ -1,0 +1,51 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'assets/mat-icon/material-icons.css';
+@import '@angular/material/prebuilt-themes/pink-bluegrey.css';
+$fontsPath: "/assets/font";
+$imagesPath: "/assets/images";
+
+$minWidth: '640px';
+.mat-sort-header-container {
+  justify-content: center !important;
+  button {
+    margin-left: 12px;
+  }
+}
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+.mat-icon {
+  vertical-align: middle;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: diablo, serif;
+}
+body {
+  background: url(#{$imagesPath}/bg.jpg);
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+}
+
+h1 {
+  text-align: center;
+}
+
+gon-root {
+  min-height: 100%;
+  display: block;
+}

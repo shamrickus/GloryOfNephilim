@@ -1,0 +1,15 @@
+<div fxLayout="column">
+    <mat-card class="gonMenu" fxLayout="column">
+        <div class="header"></div>
+        <div class="content" fxLayout="column">
+            <div *ngFor="let button of buttons">
+                <gon-button [pop]="false" [button]="button"></gon-button>
+                <div *ngIf="!last" class="menuSpacer"></div>
+            </div>
+        </div>
+        <div class="footer"></div>
+    </mat-card>
+<!--    <div id="toggle">
+        <div class="arrow-left"></div>
+    </div>-->
+</div>

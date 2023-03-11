@@ -1,0 +1,105 @@
+<h1>Runewords</h1>
+<table mat-table matSort [dataSource]="dataSource" (matSortChange)="sortData($event)">
+    <ng-container matColumnDef="Name">
+        <th mat-sort-header mat-header-cell *matHeaderCellDef> Name</th>
+        <td mat-cell *matCellDef="let element;"> {{element.Name}}</td>
+        <td mat-footer-cell *matFooterCellDef colspan="8">
+            <div id="searchRow" fxLayout="column" style="margin: 5px">
+                <div fxLayout="row">
+                    <mat-form-field fxFlex="grow">
+                        <input matInput [disabled]="advanced" placeholder="Filter (click and type here)"
+                               [(ngModel)]="filterModel.generalInput" (keyup)="onFilterUpdate()"/>
+                    </mat-form-field>
+                    <div class="advancedToggle">
+                        <button mat-flat-button (click)="toggle()" *ngIf="!advanced">Advanced</button>
+                        <button mat-flat-button (click)="toggle()" *ngIf="advanced">Basic</button>
+                    </div>
+                </div>
+                <div id="advancedSearch" *ngIf="advanced" fxLayout="row" fxLayout.lt-md="column">
+                    <div class="advancedColumn" fxLayout="column" fxFlex="grow" fxLayoutAlign="center">
+                        <mat-form-field>
+                            <input matInput (keyup)="onFilterUpdate()" [(ngModel)]="filterModel.nameInput" placeholder="Name (case insensitive)"/>
+                        </mat-form-field>
+                        <div fxLayout="row">
+                            <mat-select (selectionChange)="onFilterUpdate()" [(ngModel)]="filterModel.socketsOperator"
+                                        fxFlex="1 1 40px">
+                                <mat-option *ngFor="let op of operators" [value]="op">{{op.text}}</mat-option>
+                            </mat-select>
+                            <mat-form-field fxFlex="grow">
+                                <input matInput (keyup)="onFilterUpdate()" [(ngModel)]="filterModel.socketsInput"
+                                       (keydown)="onKeyDown($event)" type="number" placeholder="Sockets"/>
+                            </mat-form-field>
+                        </div>
+                        <div fxLayout="row">
+                            <mat-select (selectionChange)="onFilterUpdate()" [(ngModel)]="filterModel.lvlOperator"
+                                        fxFlex="1 1 40px">
+                                <mat-option *ngFor="let op of operators" [value]="op">{{op.text}}</mat-option>
+                            </mat-select>
+                            <mat-form-field fxFlex="grow">
+                                <input matInput (keyup)="onFilterUpdate()" [(ngModel)]="filterModel.lvlInput"
+                                       (keydown)="onKeyDown($event)" type="number" placeholder="Level Requirement"/>
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="advancedColumn" fxLayout="column" fxFlex="grow" fxLayoutAlign="center">
+                        <mat-form-field>
+                            <input matInput (keyup)="onFilterUpdate()" [(ngModel)]="filterModel.propertiesInput" placeholder="Properties"/>
+                        </mat-form-field>
+                        <div fxLayout="row">
+                            <mat-form-field fxFlex="grow">
+                                <mat-select multiple (selectionChange)="onFilterUpdate()" placeholder="Item Type" [(ngModel)]="filterModel.typeInput" >
+                                    <mat-option *ngFor="let type of types" [value]="type">{{type}}</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                            <button mat-flat-button (click)="filterModel.typeInput = [];onFilterUpdate()">Clear</button>
+                        </div>
+                        <div fxLayout="row">
+                            <mat-form-field fxFlex="grow">
+                                <mat-select multiple (selectionChange)="onFilterUpdate()" placeholder="Runes" [(ngModel)]="filterModel.runeInput" >
+                                    <mat-option *ngFor="let type of runes" [value]="type">{{type}}</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                            <button mat-flat-button (click)="filterModel.runeInput = [];onFilterUpdate()">Clear</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </td>
+    </ng-container>
+    <ng-container matColumnDef="Properties">
+        <th mat-sort-header mat-header-cell *matHeaderCellDef> Properties</th>
+        <td mat-cell *matCellDef="let element;">
+            <p *ngFor="let prop of element.Properties">
+                {{prop}}
+            </p>
+        </td>
+    </ng-container>
+    <ng-container matColumnDef="Runes">
+        <th mat-sort-header mat-header-cell *matHeaderCellDef> Runes</th>
+        <td mat-cell *matCellDef="let element;">
+            <div *ngFor="let rune of element.Runes">
+                {{rune.Name}}
+            </div>
+        </td>
+    </ng-container>
+    <ng-container matColumnDef="Type">
+        <th mat-sort-header mat-header-cell *matHeaderCellDef> Type</th>
+        <td mat-cell *matCellDef="let element;"> {{element.Type}} ({{element.Runes.length}})</td>
+    </ng-container>
+    <ng-container matColumnDef="Version">
+        <th mat-sort-header mat-header-cell *matHeaderCellDef> Version</th>
+        <td mat-cell *matCellDef="let element;"> {{element.Version}} </td>
+    </ng-container>
+    <ng-container matColumnDef="ItemLevel">
+        <th mat-sort-header mat-header-cell *matHeaderCellDef> Item Level</th>
+        <td mat-cell *matCellDef="let element;"> {{element.ItemLevel}} </td>
+    </ng-container>
+    <ng-container matColumnDef="LevelRequirement">
+        <th mat-sort-header mat-header-cell *matHeaderCellDef> Level Req</th>
+        <td mat-cell *matCellDef="let element;"> {{element.LevelRequirement}} </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayColumns; sticky: true"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayColumns;"></tr>
+    <tr class="sticky-footer" mat-footer-row *matFooterRowDef="['Name']; sticky: true"></tr>
+</table>

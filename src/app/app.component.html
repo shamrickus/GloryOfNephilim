@@ -1,0 +1,33 @@
+<div fxLayout="column" fxFlex="grow">
+    <div fxLayout="row" class="headerRow">
+        <div fxLayout="column" id="logoContainer">
+            <video width="276" height="120" loop autoplay="autoplay">
+                <source src="../assets/images/logo.webm" type="video/webm">
+            </video>
+            <div>Glory of Nephilim</div>
+        </div>
+        <div fxFlex="grow" id="headerSpacer"></div>
+        <div fxLayout="column" id="quickLinks">
+            <span class="lastUpdated">Last Updated: {{GetLastUpdate()}}</span>
+            <div fxLayout="row">
+                <a href="https://www.moddb.com/mods/glory-of-nephilim/downloads/glory-of-nephilim1" title="Download Glory of Nephilim 15 June 2021 - Mod DB" target="_blank">
+                    <img src="https://button.moddb.com/download/medium/180409.png" alt="Glory of Nephilim 15 June 2021" />
+                </a>
+<!--
+                <mat-slide-toggle (change)="fancyText = !fancyText" label="Authentic Font"></mat-slide-toggle>
+                <gon-button [pop]="true" [button]="downloadButton"></gon-button>
+-->
+            </div>
+        </div>
+    </div>
+    <div fxFlex="grow" fxLayout="row">
+       <gon-sidebar [buttons]="buttons"></gon-sidebar>
+        <gon-card class="{{fontType()}}" [type]="0">
+            <main>
+                <router-outlet #route="outlet"></router-outlet>
+            </main>
+        </gon-card>
+    </div>
+    <gon-footer></gon-footer>
+    <app-to-top></app-to-top>
+</div>
