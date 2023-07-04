@@ -4,7 +4,6 @@ import {ArmoryService, IItem, IRuneWord, ISocketable, nameof, Rune, SortItems} f
 import { Sort } from "@angular/material/sort";
 import {runes as runes} from "../../data/runes";
 import {Duplicate} from "../../app.factory";
-import {run} from "tslint/lib/runner";
 
 function createRuneWord() {
     return <IItem>{

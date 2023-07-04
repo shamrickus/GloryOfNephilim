@@ -1,6 +1,6 @@
 <ul>
     <li (click)="scroll(change.href)">{{change.name}}</li>
     <div *ngFor="let sub of change.subCat">
-        <app-header (onClick)="scroll($event)" [change]="sub"></app-header>
+        <gon-header (clickEvt)="scroll($event)" [change]="sub"></gon-header>
     </div>
 </ul>

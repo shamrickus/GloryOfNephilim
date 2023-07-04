@@ -824,7 +824,7 @@ export let PATCHES = [
 ];
 
 @Component({
-	selector: 'app-patches',
+	selector: 'gon-patches',
 	templateUrl: './patches.component.html',
 	styleUrls: ['./patches.component.scss']
 })

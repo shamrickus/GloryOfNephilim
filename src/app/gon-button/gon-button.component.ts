@@ -7,14 +7,11 @@ import {Router} from "@angular/router";
   templateUrl: './gon-button.component.html',
   styleUrls: ['./gon-button.component.scss']
 })
-export class GonButtonComponent implements OnInit {
-	@Input('button') button: Button;
-	@Input('pop') pop: boolean;
+export class GonButtonComponent {
+	@Input() button: Button;
+	@Input() pop: boolean;
 
   constructor(public routes: Router) { }
-
-  ngOnInit() {
-  }
 
   getClass(): string {
   	return this.getActive() ? "touched" : "untouched";

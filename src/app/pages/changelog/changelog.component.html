@@ -1,11 +1,11 @@
 <h1>Table of Contents</h1>
 <div *ngFor="let change of changes">
-    <app-header (onClick)="update($event)" [change]="change"></app-header>
+    <gon-header (clickEvt)="update($event)" [change]="change"></gon-header>
 </div>
 <br />
 <hr />
 <br />
 <h1>Changes</h1>
 <div *ngFor="let change of changes">
-    <app-change [change]="change"></app-change>
+    <gon-change [change]="change"></gon-change>
 </div>

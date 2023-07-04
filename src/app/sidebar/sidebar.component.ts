@@ -8,7 +8,7 @@ import {Router} from "@angular/router";
   styleUrls: ['./sidebar.component.scss']
 })
 export class SidebarComponent implements OnInit {
-    @Input('buttons') buttons: Button[];
+    @Input() buttons: Button[];
     activeLinkIndex: number = -1;
 
   constructor(public routes: Router) { }

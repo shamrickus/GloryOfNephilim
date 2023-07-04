@@ -7,13 +7,10 @@ import {runes} from "../../data/runes";
 @Injectable({
     providedIn: 'root'
 })
-export class ArmoryService implements OnInit {
+export class ArmoryService {
     private items: IItem[] = [];
     private runes: Rune[] = [];
-    @Output() change: EventEmitter<IItem[]> = new EventEmitter<IItem[]>();
-
-    ngOnInit() {
-    }
+    @Output() changeEvt: EventEmitter<IItem[]> = new EventEmitter<IItem[]>();
 
     getByName(pName: string): ISocketable {
         for (let rune of this.runes) {
@@ -45,7 +42,7 @@ export class ArmoryService implements OnInit {
                 item.LevelRequirement = this.getLevelRequirement(item);
             }
         }
-        this.change.emit(this.items);
+        this.changeEvt.emit(this.items);
     }
 
     getRuneNames() : string[] {

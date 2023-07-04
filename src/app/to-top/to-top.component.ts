@@ -1,7 +1,7 @@
 import {Component, HostListener, OnInit} from '@angular/core';
 
 @Component({
-  selector: 'app-to-top',
+  selector: 'gon-to-top',
   templateUrl: './to-top.component.html',
   styleUrls: ['./to-top.component.scss']
 })
