@@ -6,7 +6,7 @@
     "ng": "./node_modules/.bin/ng",
     "start": "./node_modules/.bin/ng serve",
     "build": "./node_modules/.bin/ng build",
-    "test": "./node_modules/.bin/ng test --browsers=ChromeHeadlessDangerous",
+    "test": "./node_modules/.bin/ng test --watch=false --browsers=ChromeHeadlessDangerous",
     "lint": "./node_modules/.bin/ng lint",
     "e2e": "./node_modules/.bin/ng e2e"
   },
