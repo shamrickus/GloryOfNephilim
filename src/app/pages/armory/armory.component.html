@@ -15,7 +15,7 @@
                         <button mat-flat-button (click)="toggle()" *ngIf="advanced">Basic</button>
                     </div>
                 </div>
-                <div id="advancedSearch" *ngIf="advanced" fxLayout="row" fxLayout.lt-md="column">
+                <div id="advancedSearch" *ngIf="advanced" fxLayout="row">
                     <div class="advancedColumn" fxLayout="column" fxFlex="grow" fxLayoutAlign="center">
                         <mat-form-field>
                             <input matInput (keyup)="onFilterUpdate()" [(ngModel)]="filterModel.nameInput" placeholder="Name (case insensitive)"/>

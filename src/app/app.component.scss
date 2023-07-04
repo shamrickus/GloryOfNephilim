@@ -1,7 +1,7 @@
 $fontsPath: "../assets/font";
 $imagesPath: "../assets/images";
 
- gon-home, gon-card {
+gon-home, gon-card {
   width: 100%;
   margin: 0 15px 100px 5px;
 }
@@ -10,9 +10,10 @@ gon-card.diablo {
   font-family: diablo, serif;
 }
 
-div#quickLinks{
+div#quickLinks {
   min-width: 300px;
 }
+
 div#headerSpacer {
   min-width: 199px;
 }
@@ -24,7 +25,7 @@ gon-card.normal {
 gon-footer {
   min-width: 640px;
   width: 100%;
-  z-index:5;
+  z-index: 5;
 }
 
 .headerRow {
@@ -52,6 +53,7 @@ div {
     color: white;
     margin: 25px 15px 10px 0;
   }
+
   gon-button {
     margin-left: auto;
     margin-right: auto;
@@ -71,9 +73,9 @@ h4 {
   width: 276px;
 
   div {
-    font-size:30px;
-    text-shadow: 0 0 1px rgba(255,255, 255, 1), 0 0 6px red, 0 0 8px red;
-    text-align:center;
+    font-size: 30px;
+    text-shadow: 0 0 1px rgba(255, 255, 255, 1), 0 0 6px red, 0 0 8px red;
+    text-align: center;
     color: orange;
   }
 }

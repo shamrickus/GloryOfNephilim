@@ -10,7 +10,6 @@ import {HomeComponent} from './pages/home/home.component';
 import {GonButtonComponent} from './gon-button/gon-button.component';
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {GonCardComponent} from './gon-card/gon-card.component';
-import {FlexLayoutModule} from "@angular/flex-layout";
 import {ChangelogComponent} from './pages/changelog/changelog.component';
 import {ChangeComponent} from './pages/changelog/change/change.component';
 import {HeaderComponent} from './pages/changelog/header/header.component';
@@ -43,7 +42,6 @@ import {FormsModule} from "@angular/forms";
 		BrowserModule,
 		BrowserAnimationsModule,
 		AppRoutingModule,
-		FlexLayoutModule,
 		MaterialModule,
 		FormsModule
 	],

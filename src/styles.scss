@@ -21,6 +21,30 @@ $minWidth: '640px';
                                   supported by Chrome and Opera */
 }
 
+[fxLayout="column"], [fxLayout="row"] {
+  display: flex;
+
+  &[fxLayout="column"] {
+    flex-direction: column;
+  }
+
+  &[fxLayout="row"] {
+    flex-direction: row;
+  }
+}
+
+[fxLayoutAlign="center"] {
+  justify-content: center;
+}
+
+[fxFlex="1 1 40px"] {
+  flex-basis: 40px;
+}
+
+[fxFlex="grow"] {
+  flex-grow: 1;
+}
+
 .mat-icon {
   vertical-align: middle;
 }
