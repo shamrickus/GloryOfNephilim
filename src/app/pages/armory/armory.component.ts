@@ -25,7 +25,7 @@ interface ItemFilter {
 }
 
 @Component({
-	selector: 'app-armory',
+	selector: 'gon-armory',
 	templateUrl: './armory.component.html',
 	styleUrls: ['./armory.component.scss']
 })
@@ -95,7 +95,7 @@ export class ArmoryComponent implements OnInit {
 		this.operators.push(<MathOperator>{text: "<", filter: (value, dataElement) => +value > dataElement});
 		this.operators.push(<MathOperator>{text: ">", filter: (value, dataElement) => +value < dataElement});
 		this.updateItems(this._armory.getItems());
-		this._armory.change.subscribe(e => {
+		this._armory.changeEvt.subscribe(e => {
 			this.updateItems(e);
 		});
 		this.displayColumns = ['Name', "Runes", "Type", "Version", "LevelRequirement", "Properties"];

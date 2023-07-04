@@ -5,11 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './gon-footer.component.html',
   styleUrls: ['./gon-footer.component.scss']
 })
-export class GonFooterComponent implements OnInit {
+export class GonFooterComponent {
 
   constructor() { }
-
-  ngOnInit() {
-  }
-
 }

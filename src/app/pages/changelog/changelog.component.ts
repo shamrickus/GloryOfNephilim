@@ -147,7 +147,7 @@ export const CHANGES = <IChange[]> [
 ];
 
 @Component({
-  selector: 'app-changelog',
+  selector: 'gon-changelog',
   templateUrl: './changelog.component.html',
   styleUrls: ['./changelog.component.scss']
 })

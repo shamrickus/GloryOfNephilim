@@ -58,7 +58,6 @@ public/typings/*
 public/source/**/*.js
 public/source/**/*.css
 
-*.js
 app/config/*
 log.txt
 src/environments/environment.prod.ts

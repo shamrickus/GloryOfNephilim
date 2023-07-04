@@ -8,7 +8,7 @@ export enum CARDTYPES {PRIMARY = 0, SECONDARY = 1}
   styleUrls: ['./gon-card.component.scss']
 })
 export class GonCardComponent implements OnInit {
-  @Input('type') type: CARDTYPES;
+  @Input() type: CARDTYPES;
   cardClass: string;
 
   getType() {
