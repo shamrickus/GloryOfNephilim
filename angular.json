@@ -121,7 +121,6 @@
       }
     }
   },
-  "defaultProject": "gon",
   "schematics": {
     "@schematics/angular:component": {
       "prefix": "gon",
@@ -143,10 +142,18 @@
     "@schematics/angular:directive": {
       "lintFix": true,
       "prefix": "gon"
+    },
+    "@angular-eslint/schematics:application": {
+      "setParserOptionsProject": true
+    },
+    "@angular-eslint/schematics:library": {
+      "setParserOptionsProject": true
     }
   },
   "cli": {
     "analytics": false,
-    "defaultCollection": "@angular-eslint/schematics"
+    "schematicCollections": [
+      "@angular-eslint/schematics"
+    ]
   }
 }
